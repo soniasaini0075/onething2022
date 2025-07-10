@@ -1,0 +1,86 @@
+@import '../../assets/scss/breakpoints';
+
+.enterprise-page {
+	.industry-page-wrapper {
+		section {
+			&.industry_banner {
+				h1 {
+					span {
+						&.industry-tag {
+							&:after {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			&.industry-intro-wrapper {
+				.wrapp_ {
+					.content {
+						h2 {
+							margin-bottom: 80px;
+							text-transform: initial;
+							@include for-tablet-only {}
+							@include phone {
+								margin-bottom: 24px;
+								width: 80%;
+							}
+						}
+						.stats-container {
+							.stats-flex {
+								.stat-div {
+									height: 240px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.curated-large-wrapper {
+		section {
+			&.curated-content {
+				.curated-cards {
+					.custom-card {
+						&.bg-violet {
+							background:var(--pitch_black) !important;
+							background-image: unset;
+							>figure {
+								img {
+									display: none;
+								}
+							}
+							&.podcast_lg_cards {
+								.card-body {
+									.podcast_mx-wdth {
+										max-width: 100%;
+									}
+									.large-ban {
+										div {
+											&.text {
+												max-width: 100%;
+											}
+										}
+									}
+								}
+							}
+						}
+						.icon-share {
+							display: none;
+						}
+						a {
+							&.bttn {
+								img {
+									&.icon-share {
+										display: inline-block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@import "../../assets/scss/breakpoints";
+
+section {
+  &.impact-section {
+    .image-slider-overlay-bttn {
+      @include for-tablet-only {
+        display: none;
+      }
+    }
+    .image-slider-wrap {
+      .impact_slider {
+     
+        .home-award{
+          width: 328px !important;
+height: 330px !important;
+flex-shrink: 0;
+        }
+        .slick-list {
+        
+          padding-left: 12.4%;
+          @include for-tablet-only {
+            padding-left: 40px;
+          }
+          @include phone {
+            padding-left: calc(12.4% * 2);
+          }
+         
+        }
+      }
+       .home-track{
+        .slick-list{
+          .slick-track{
+ display: flex !important;
+gap: 24px !important;
+width:100% !important ;
+          }
+        }
+      
+      }
+    }
+  }
+}

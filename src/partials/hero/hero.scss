@@ -1,0 +1,273 @@
+@import "../../assets/scss/breakpoints";
+
+
+section {
+  &.home-banner {
+    padding: 128px 0 42px 0;
+    .lines-behind-layout-wrapper {
+      display: none;
+    }
+    @include for-tablet-only {
+      padding: 64px 0 48px 0;
+    }
+    a {
+      &.bttn-primary {
+        border-image: var(--dark_pink_gradient)10;
+        background: var(--dark_pink_gradient);
+        color: var(--white);
+        border-width: 1px;
+        border-style: solid;
+        width: 189px;
+        padding: 12px 16px;
+        font-family: "worksans-semibold";
+        .arrow-dot {
+          margin: 0;
+          background: var(--white);
+        }
+      }
+    }
+    .banner_txt {
+      max-width: 1050px;
+      padding-left: 140px;
+      // margin: 0 auto;
+      @include for-tablet-only {
+        max-width: 100%;
+        padding-left: 0;
+      }
+      @include phone {}
+
+      .backspace_cursor {
+        color:var(--red);
+        font-weight: 300;
+      }
+
+      h1 {
+        margin-bottom: 64px;
+        text-transform: initial;
+        font-size: 64px;
+        line-height: 140%;
+        font-family: "neue-haas-display-bold";
+        font-weight: 700;
+        @include for-tablet-only {
+          font-size: 48px;
+          margin-bottom: 32px;
+        }
+        @include phone {
+          font-size: 48px;
+          margin-bottom: 32px;
+        }
+        span {
+          font-style: italic;
+          display: inline-block;
+          width: fit-content;
+          padding: 0 8px 0 0;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 1.6;
+        font-weight: 400;
+        margin-bottom: 15px;
+        letter-spacing: -0.01em;
+
+        @include phone {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 160%;
+          letter-spacing: 0;
+          margin-bottom: 40px;
+          color:var(--black-8);
+        }
+      }
+
+      .vd_img {
+        cursor: pointer;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .banner-text-wrapper {
+      &-new {
+        color: hsla(0, 3%, 6%, 0.6);
+        font-family: "Work Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        line-height: 180%;
+        margin-bottom: 15px;
+      }
+      @include phone {
+        width: 100%;
+      }
+      .banner-text-anim {
+        &.banner-description {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 180%;
+          letter-spacing: -0.01em;
+          color:var(--black-6);
+
+          @include phone {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0;
+            color: var(--black-8);
+          }
+        }
+      }
+
+      .vd_img {
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+        background-position: center !important;
+        min-height: 140px;
+      }
+
+      &.play-video {
+        width: 240px;
+        button {
+          --bs-btn-bg: transparent;
+          --bs-btn-border-color: transparent;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          --bs-btn-hover-bg: transparent;
+          --bs-btn-disabled-bg: transparent;
+          --bs-btn-box-shadow: none;
+          --bs-btn-focus-box-shadow: none;
+          border: none;
+          box-shadow: none;
+          @include for-tablet-only {
+          }
+          @include phone {
+            width: 179px;
+            height: 105px;
+          }
+          figure {
+            background: url("../../assets/img/home/showreel-button.gif");
+          }
+          &:hover {
+            border: transparent;
+            background: transparent;
+            box-shadow: none;
+            --bs-btn-box-shadow: none;
+            --bs-btn-focus-box-shadow: none;
+            border: none;
+          }
+        }
+
+        .home-video--modal {
+          .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            font-size: 0;
+            padding: 0;
+            border: 0;
+            @include for-tablet-only {
+            }
+            @include phone {
+              position: unset;
+            }
+          }
+          #video-wrapper {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+
+            > #player {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+            }
+          }
+
+          video {
+            height: 100%;
+            width: 100%;
+          }
+
+          @media (min-aspect-ratio: 16/9) {
+            #video-wrapper > #player {
+              height: 300%;
+              top: -100%;
+            }
+          }
+
+          @media (max-aspect-ratio: 16/9) {
+            #video-wrapper > #player {
+              width: 300%;
+              left: -100%;
+            }
+          }
+        }
+      }
+    }
+
+    .grad {
+      @include phone {
+        display: none;
+      }
+
+      &.home-left {
+        position: absolute;
+        left: 0;
+        bottom: 29%;
+        animation: homeBar1 1500ms,barAnimation 2s 1;
+        animation-fill-mode: forwards;
+      }
+
+      &.home-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: homeBar2 1500ms,barAnimation 2s 1;
+        animation-fill-mode: forwards;
+          // transition-duration: 1500ms;
+          // &.anime-scroll {
+          //   top: calc(100% - $home-right-bar-height);
+          //   transition-duration: 1500ms;
+          // }
+
+          // &.anime-scroll-2 {
+          //   top: 165%;
+          //   transition-duration: 1100ms;
+          // }
+          // &.anime-scroll-3 {
+          //   top: 275%;
+          //   transition-duration: 1100ms;
+          // }
+          // &.anime-scroll-4 {
+          //   top: 355%;
+          //   transition-duration: 1100ms;
+          // }
+          // &.anime-scroll-5 {
+          //   top: 435%;
+          //   transition-duration: 1100ms;
+          // }
+          // &.anime-scroll-6 {
+          //   top: 550%;
+          //   transition-duration: 1100ms;
+          // }
+        }
+      }
+    }
+  }

@@ -1,0 +1,46 @@
+@import '../../assets/scss/breakpoints';
+
+.lines-behind-layout-wrapper {
+	.lines-behind-layout {
+		position: fixed;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		display: flex;
+		pointer-events: none;
+		@include for-tablet-only {
+			display: none;
+		}
+		@include phone {
+			display: none;
+		}
+		.column-for-line {
+			border-right: 1px solid var(--black-5);
+			// border-right: 1px solid rgba($zest-black, 1);
+			// border-right: 1px solid rgba($zest-white, 1);
+			height: 100%;
+			width: 182px;
+			display: flex;
+			&.one {
+				// background: rgba($zest-red, 0.1);
+			}
+			&.two {
+				// background: rgba($zest-black, 0.1);
+			}
+			&.three {
+				// background: rgba($zest-purple, 0.1);
+			}
+			&.four {
+				width: 546px;
+				// background: rgba($zest-magenta, 0.1);
+			}
+			&.five {
+				// background: rgba($zest-black, 0.1);
+			}
+			&.six {
+				// background: rgba($zest-red, 0.1);
+			}
+		}
+	}
+}

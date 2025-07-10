@@ -1,0 +1,95 @@
+@keyframes reducetime {
+  0% {
+    left: 0;
+    width: 0;
+}
+100% {
+    left: 100%;
+    width: 100%;
+}
+}
+
+@keyframes reversetime {
+  0% {
+    left: 100%;
+    width: 100%;
+}
+100% {
+    left: 0%;
+    width: 0%;
+}
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+}
+to {
+    left: 200%;
+}
+}
+
+@keyframes moving-in {
+    from {
+        opacity: 0;
+        transform: translateX(0%);
+        transition: transform 1s ease-in-out;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-100%);
+        transition: transform 1s ease-in-out;
+    }
+}
+
+@keyframes moving-in-rev {
+    from {
+        opacity: 1;
+        transform: translateX(-100%);
+        transition: transform 1s ease-in-out;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(0%);
+        transition: transform 1s ease-in-out;
+    }
+}
+
+@keyframes moving-out {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 1s ease-in-out;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 1s ease-in-out;
+    }
+}
+
+@keyframes moving-out-rev {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 1s ease-in-out;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: transform 1s ease-in-out;
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

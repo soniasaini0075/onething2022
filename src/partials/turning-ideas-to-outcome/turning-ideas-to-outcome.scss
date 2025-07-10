@@ -1,0 +1,111 @@
+@import "../../assets/scss/breakpoints";
+
+section {
+    &.our-services-wrapper {
+      padding: 144px 0 112px;
+      @include phone {
+        padding: 64px 0 56px;
+      }
+
+      .overall-services {
+        max-width: 724px;
+        margin: 0 0 0 auto;
+        @include phone {
+          max-width: 100%;
+        }
+        .section-heading {
+          margin-bottom: 72px;
+          font-size: 72px;
+          max-width: 525px;
+          &:before {
+            width: 88%;
+            @include phone {
+              width: 100%;
+            }
+          }
+          @include phone {
+            margin-bottom: 40px;
+            font-size: 40px;
+          }
+        }
+        .bttn {
+          width: 236px;
+          padding: 14px 20px;
+        }
+        .our-services-desc {
+          font-size: 24px;
+          line-height: 180%;
+          letter-spacing: -0.01em;
+          color: var(--pitch_black);
+          @include phone {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 200%;
+          }
+          .hover-grad-txt {
+            font-family: "neue-haas-display-medium";
+            @include for-tablet-only {
+              background: var(--dark_pink_gradient);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+              &:after {
+                width: 100%;
+              }
+            }
+            @include phone {
+            }
+          }
+        }
+
+        .work-grid {
+          padding: 112px 0 72px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: flex-start;
+          grid-row-gap: 56px;
+          @include for-tablet-only {
+            grid-template-columns: repeat(4, 1fr);
+          }
+          @include phone {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 40px 0 48px 0;
+            grid-row-gap: 40px;
+          }
+          .numbers {
+            .working-days {
+              width: 150px;
+              @include phone {
+                width: 80%;
+              }
+              h5 {
+                margin-bottom: 4px;
+              }
+
+              p {
+                color: var(--black-6);
+                @include phone {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+
+        .grad {
+          position: absolute;
+
+          &.medium {
+            left: 0;
+            bottom: 0%;
+          }
+
+          &.large {
+            left: calc(359px - 180px);
+            top: -17.2%;
+          }
+        }
+      }
+    }
+}

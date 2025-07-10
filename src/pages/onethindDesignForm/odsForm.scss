@@ -1,0 +1,8 @@
+@import "../../assets/scss/breakpoints";
+
+.titleWrap {
+    width: 500px;
+    @include phone {
+        width: 298px;
+    }
+}

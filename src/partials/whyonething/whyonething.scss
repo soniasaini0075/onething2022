@@ -1,0 +1,123 @@
+@import "../../assets/scss/breakpoints";
+
+.whyonething-wrapper {
+  section {
+    &.whyonething-sec {
+      background: var(--pitch_black);
+      @include for-tablet-only {}
+      @include phone {
+        padding: 64px 0 64px 0;
+      }
+      .grad {
+        display: none;
+        bottom: 90px;
+        position: sticky;
+      }
+      .lets_talk_txt {
+        padding-right: 40px;
+        @include for-tablet-only {}
+        @include phone {
+          padding: 0;
+        }
+        h2 {
+          font-family: "neue-haas-display-medium";
+          font-size: 64px;
+          line-height: 120%;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.005em;
+          color: var(--white);
+          @include for-tablet-only {}
+          @include phone {
+            font-size: 40px;
+            width: 100%;
+          }
+          &:before {
+            background: var(--white);
+          }
+        }
+      }
+      .content-grid {
+        .talk_list {
+          li {
+            .black_card {
+              transition-duration: 0.4s;
+              background: url("../../assets/img/about/numbers/dark/1-dark.webp");
+              padding: 45px 24px 45px 45px;
+              @include for-tablet-only {}
+              @include phone {
+                padding: 16px;
+              }
+              .card_content {
+                h4 {
+                  background: var(--dark_pink_gradient);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  text-fill-color: transparent;
+                }
+                label {
+                  color: var(--white);
+                  padding: 12px 45px 0 45px;
+                  @include for-tablet-only {}
+                  @include phone {
+                    padding: 16px 0 0 16px;
+                  }
+                }
+                p {
+                  display: none;
+                  opacity: 0;
+                  margin-top: 16px;
+                  color: var(--pitch_black);
+                }
+              }
+              &.projects-card {
+                background: url("../../assets/img/about/numbers/dark/2-dark.webp");
+              }
+              &.clients-card {
+                background: url("../../assets/img/about/numbers/dark/3-dark.webp");
+              }
+              &.conferences-card {
+                background: url("../../assets/img/about/numbers/dark/4-dark.webp");
+              }
+              &.clients-card {
+                background: url("../../assets/img/about/numbers/dark/5-dark.webp");
+              }
+              &.awards-card {
+                background: url("../../assets/img/about/numbers/dark/6-dark.webp");
+              }
+              &.years-card {
+                background: url("../../assets/img/about/numbers/dark/1-dark.webp");
+              }
+              &:hover {
+                background: url("../../assets/img/about/numbers/dark/hover-bg.webp");
+                transition-duration: 0.4s;
+                label {
+                  background: var(--dark_pink_gradient);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  text-fill-color: transparent;
+                }
+                p {
+                  opacity: 1;
+                  display: block;
+                  @include phone {
+                    font-size: 10px;
+                    line-height: 160%;
+                  }
+                }
+                 h4{
+                  line-height: 80%;
+                }
+                @include phone {
+                  pointer-events: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

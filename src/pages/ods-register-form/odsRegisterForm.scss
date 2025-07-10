@@ -1,0 +1,18 @@
+@import "../../assets/scss/breakpoints";
+
+.titleWrap {
+    width: 500px;
+    @include phone {
+        width: 298px;
+    }
+}
+.divider {
+    width: 28%;
+    height: 38px;
+    border-top: 2px solid #FFFFFF;
+}
+
+.optional {
+    color: rgba(15, 14, 14, 0.20);
+    font-size: 20px;
+}

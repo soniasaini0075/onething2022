@@ -1,0 +1,237 @@
+@import "../../assets/scss/breakpoints";
+
+section {
+
+&.projects-intro-wrapper {
+      padding: 80px 0;
+      background: url("../../assets/img/home/industry-bg.webp");
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      z-index: 9;
+
+      @include phone {
+        padding: 72px 0;
+      }
+
+      .div-wrap {
+        .project-cat-tabs {
+          padding-bottom: 34px;
+          margin-bottom: 40px;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          border-bottom: 2px solid var(--white-4);
+          &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+          }
+          scrollbar-color: transparent transparent;
+          @include phone {
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            flex-wrap: nowrap;
+            overflow: scroll;
+          }
+
+          .nav-item {
+            position: relative;
+            flex-shrink: 0;
+            margin: 0 64px 0 0;
+            @include for-tablet-only {
+              margin: 0 32px 0 0;
+            }
+            @include phone {
+              // margin: 0 40px 0 0;
+              margin: 0;
+            }
+
+            .nav-link {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 160%;
+              letter-spacing: -0.01em;
+              text-transform: uppercase;
+              color: var(--white-8);
+              padding: 0;
+              position: relative;
+              outline: none;
+              border-color: transparent;
+              border: 0;
+              opacity: 0.8;
+              font-family: "neue-haas-display-roman";
+              @include phone {
+                font-size: 18px;
+                letter-spacing: 0.035em;
+                display: none;
+              }
+
+              &:before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                left: 0;
+                right: 0;
+                bottom: -33px;
+                background: var(--white);
+              }
+
+              &.active {
+                font-weight: 700;
+                background: transparent;
+                border: 0;
+                color: var(--white);
+                opacity: 1;
+                font-family: "neue-haas-display-bold";
+                &:before {
+                  width: 100%;
+                }
+                @include phone {
+                  display: block;
+                }
+              }
+
+              &:focus-visible {
+                outline: none;
+              }
+
+              &:hover {
+                border-color: transparent;
+                color: var(--white-6);
+              }
+            }
+
+            &:after {
+              position: absolute;
+              content: "/";
+              top: 0;
+              right: -48px;
+              font-size: 24px;
+              line-height: 160%;
+              letter-spacing: 0;
+              text-transform: uppercase;
+              color: var(--white);
+              @include for-tablet-only {
+                right: -24px;
+              }
+              @include phone {
+                top: -4px;
+                right: -24px;
+                display: none;
+              }
+            }
+
+            &:last-of-type {
+              margin: 0;
+
+              &:after {
+                content: unset;
+              }
+            }
+          }
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
+        .tab-content {
+          h5 {
+            color: var(--white);
+            width: 90%;
+            height: 260px;
+            font-family: "worksans-semibold", sans-serif;
+            @include for-tablet-only {
+              height: 230px;
+            }
+            @include phone {
+              width: 100%;
+              line-height: 36px;
+            }
+          }
+
+          .bttn-primary {
+            margin-top: 56px;
+            margin-left: auto;
+            width: fit-content;
+            width: -moz-fit-content;
+            width: -webkit-fit-content;
+            @include for-tablet-only {
+              margin-left: initial;
+            }
+            @include phone {
+              margin-top: 48px;
+              margin-left: unset;
+            }
+            .arrow-dot {
+              margin-left: 0;
+            }
+          }
+
+          div[role="tabpanel"] {
+            overflow: hidden;
+            &.active {
+              h5 {
+                animation: slideup 0.5s ease-in;
+                @include for-tablet-only {
+                  animation: unset;
+                }
+              }
+            }
+          }
+        }
+
+        .tab--arrows {
+          margin-top: -56px;
+          position: relative;
+          z-index: 9;
+          @include for-tablet-only {
+            margin-top: 48px;
+          }
+          @include phone {
+            margin-top: 16px;
+          }
+          button {
+            background: transparent;
+            border: transparent;
+            padding: 0;
+            transition-duration: 0s;
+            border-radius: 100%;
+
+            img {
+              width: 56px;
+              height: 56px;
+              filter: invert(100%) brightness(100);
+              transition-duration: 0.4s;
+              @include phone {
+                width: 48px;
+                height: 48px;
+              }
+            }
+
+            &.tab-prev {
+              transform: rotate(180deg);
+            }
+
+            &.tab-next {
+              margin-left: 24px;
+              @include phone {
+                margin-left: 16px;
+              }
+            }
+
+            &:hover {
+              transition-duration: 0s;
+              background: var(--white);
+
+              img {
+                filter: unset;
+                transition-duration: 0s;
+              }
+            }
+          }
+        }
+      }
+    }
+}

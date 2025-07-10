@@ -1,0 +1,287 @@
+@import '../../assets/scss/breakpoints';
+
+.ux-audit-page {
+	.demo--strip {
+		// display: none;
+		&.toshow {
+			display: none;
+		}
+	}
+	.lines-behind-layout-wrapper {
+		display: none;
+	}
+}
+
+.ux-audit-wrapper {
+	section {
+		&.page-heading {
+			padding-bottom: 0;
+			.heading-wrapper {
+				position: relative;
+				padding-bottom: 0;
+				h1 {
+					@include for-tablet-only {}
+					@include phone {
+						br {
+							display: none;
+						}
+					}
+				}
+				.buttons-wrapper {
+					margin: 32px 0 64px 0;
+					.bttn-primary {
+						width: 274px;
+						padding: 14px 20px;
+					}
+				}
+				.banner-wrapper-sub {
+					figure {
+						img {
+							
+							@include for-tablet-only {}
+							@include phone {
+								width: 100%;
+							}
+						}
+					}
+				}
+				.grad {
+					&.medium {
+						bottom: 60%;
+					}
+					&.small {
+						bottom: -30%;
+					}
+				}
+			}
+		}
+		&.what-ux-audit-wrapper {
+			.div-wrap {
+				padding: 100px 0;
+				position: relative;
+				@include for-tablet-only {}
+				@include phone {
+					padding: 64px 0;
+				}
+				.grad {
+					position: absolute;
+					left: 180px;
+					top: 72px;
+				}
+				h2 {
+					margin-bottom: 40px;
+				}
+				.fs-20 {
+					font-size: 20px;
+					width: 75%;
+					@include for-tablet-only {}
+					@include phone {
+						width: 100%;
+					}
+				}
+				.left_container {
+					@include for-tablet-only {}
+					@include phone {
+						padding: 0;
+					}
+				}
+			}
+		}
+		&.why-ux-audit-wrapper {
+			.div-wrap {
+				padding: 100px 0;
+				position: relative;
+				@include for-tablet-only {}
+				@include phone {
+					padding: 0 0 64px 0;
+				}
+				.grad {
+					position: absolute;
+					right: 180px;
+					top: 72px;
+				}
+				h2 {
+					margin-bottom: 40px;
+				}
+				.fs-20 {
+					font-size: 20px;
+					width: 77%;
+					@include for-tablet-only {}
+					@include phone {
+						width: 100%;
+					}
+				}
+				.right_container {
+					@include for-tablet-only {}
+					@include phone {
+						padding: 0;
+					}
+				}
+			}
+		}
+		&.when-ux-audit-wrapper {
+			background: var(--ashwhite);
+			.div-wrap {
+				position: relative;
+				padding: 120px 0;
+				@include for-tablet-only {}
+				@include phone {
+					padding: 80px 0;
+				}
+				.newh2 {
+					margin-bottom: 80px;
+					width: 80%;
+					@include for-tablet-only {}
+					@include phone {
+						margin-bottom: 40px;
+						width: 100%;
+					}
+					&:before {
+						width: 436px;
+						@include for-tablet-only {}
+						@include phone {
+							width: 100%;
+						}
+					}
+				}
+				.when-grid {
+					>.left_container {
+						@include for-tablet-only {}
+						@include phone {
+							padding-left: 0;
+							padding-right: 24px;
+						}
+					}
+				}
+				.content-grid {
+					grid-template-columns: repeat(2,1fr);
+					align-items: flex-start;
+					gap: 80px;
+					@include for-tablet-only {}
+					@include phone {
+						grid-template-columns: repeat(1,1fr);
+						gap: 48px;
+					}
+					.grid {
+						span {
+							color: var(--gray);
+							font-size: 32px;
+							line-height: 180%;
+							display: block;
+							margin-bottom: 16px;
+							font-family: "worksans-semibold";
+						}
+						.fs-20 {
+							font-size: 20px;
+							font-family: "worksans-medium";
+							line-height: 160%;
+						}
+					}
+				}
+				.grad {
+					position: absolute;
+					&.medium {
+						left: calc(180px + 64px);
+						top: 30%;
+					}
+					&.small {
+						left: 138px;
+						bottom: 30%;
+					}
+				}
+			}
+		}
+		&.ux-audit-services-wrapper {
+			.div-wrap {
+				padding: 140px 0 0 0;
+				.services-content {
+					position: relative;
+					.grad {
+						position: absolute;
+						left: 180px;
+					}
+					.services-content-sub {
+						.main-container {
+							@include for-tablet-only {}
+							@include phone {
+								>.left_container {
+									padding: 0;
+									padding-right: 24px;
+								}
+							}
+							.section-heading {
+								margin-bottom: 80px;
+								@include for-tablet-only {}
+								@include phone {
+									margin-bottom: 40px;
+								}
+							}
+							.service-accordian {
+								display: grid;
+								grid-template-columns: repeat(2, 1fr);
+								align-items: flex-start;
+								gap: 112px;
+								width: 688px;
+								margin-bottom: 80px;
+								@include for-tablet-only {}
+								@include phone {
+									width: 100%;
+									gap: 16px;
+									margin-bottom: 64px;
+								}
+								ul {
+									&.tags {
+										display: inline-block;
+										li {
+											padding: 10px 16px;
+											color: var(--pitch_black);
+											margin-right: 16px;
+											margin-bottom: 16px;
+											border: 1px solid rgba(229, 54, 23, 0.1);
+											display: inline-block;
+											font-style: normal;
+											font-size: 16px;
+											cursor: default;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.services-audit-banner-content {
+					display: flex;
+					justify-content: flex-end;
+					align-items: flex-start;
+					position: relative;
+					.grad {
+						position: absolute;
+						left: 180px;
+						bottom: 0;
+					}
+					figure {
+						.section-banner {
+							height: 396px;
+							@include for-tablet-only {}
+							@include phone {
+								width: 100%;
+								height: auto;
+								padding: 0 24px 40px 24px;
+							}
+						} 
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

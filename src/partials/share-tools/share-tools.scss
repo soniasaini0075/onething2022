@@ -1,0 +1,30 @@
+.share-blog-tools {
+    .tools-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >p {
+            font-size: 18px;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: flex-start;
+            grid-column-gap: 16px;
+            li {
+                a {
+                    svg {
+                        fill: var(--pitch_black);
+                    }
+                }
+                &:hover {
+                    a {
+                        svg {
+                            fill: var(--light_pink_gradient);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

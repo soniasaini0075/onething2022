@@ -1,0 +1,51 @@
+@import '../../assets/scss/breakpoints';
+
+.health-and-wellness-page {
+	.industry-page-wrapper {
+		section {
+			&.related-industries-posts {
+				.heading-wrapper {
+					width: 60%;
+					@include for-tablet-only {}
+					@include phone {
+						width: 100%;
+					}
+				}
+			}
+			&.industry-intro-wrapper {
+				.wrapp_ {
+					.content {
+						.stats-container {
+							.stats-flex {
+								.stat-div {
+									height: 260px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.curated-large-wrapper {
+		section {
+			&.curated-content {
+				.curated-cards {
+					.custom-card {
+						&.bg-violet {
+							&.podcast_lg_cards {
+								.card-body {
+									.large-ban {
+										.in-flx {
+											margin-top: 110px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

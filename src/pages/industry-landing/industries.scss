@@ -1,0 +1,317 @@
+@import "../../assets/scss/main.scss";
+
+#button-tooltip{
+  color: blue;
+}
+.industries-landing-page {
+  .lines-behind-layout-wrapper {
+    display: none;
+  }
+}
+.industries-page-wrapper {
+  section {
+    &.page-heading {
+      padding-bottom: 0;
+      @include phone {
+        padding: 8px;
+      }
+      .heading-wrapper {
+        position: relative;
+        @include phone{
+          padding: 24px 0;
+        }
+        h1 {
+          margin-bottom: 64px;
+          @include for-tablet-only {}
+          @include phone {
+            margin-bottom: 40px;
+            font-size: 32px;
+            padding: unset;
+          }
+        }
+        .banner-wrapper {
+          figure {
+            width: 75%;
+            margin: 0 auto;
+            @include for-tablet-only {}
+            @include phone {
+              width: 100%;
+            }
+            img {
+              width: 100%;
+              height: 364px;
+              object-fit: cover;
+              object-position: center center;
+              @include for-tablet-only {}
+              @include phone {}
+            }
+          }
+        }
+        .grad {
+          &.gr-box2 {
+            top: 140px;
+          }
+          &.gr-box {
+            right: 0;
+          }
+        }
+      }
+    }
+    &.industry-intro-wrapper {
+      @include phone {
+        padding: 8px;
+      }
+      .wrapp_ {
+        position: relative;
+        .grad-img {
+          position: absolute;
+        }
+        .content {
+          @include phone{
+            padding-left: unset;
+          }
+          .intro-text {
+            color: $zest-black;
+            font-size: 24px;
+            line-height: 180%;
+            letter-spacing: -0.24px;
+            padding-bottom: 80px;
+            width: 720px;
+            @include for-tablet-only{
+              width: unset;
+            }
+            @include phone{
+              font-size: 16px;
+              width: unset;
+              padding-bottom: 32px;
+
+            }
+          }
+        }
+      }
+    }
+    &.related-industries-posts{
+      padding: 60px 0;
+      @include for-tablet-only{
+        padding: 0px 0 60px 0;
+
+      }
+      @include phone{
+        padding: 0px 0 60px 8px;
+
+      }
+      .container{
+        @include phone{
+          padding: 0 18px;
+        }
+        .post-listing{
+          display: flex;
+          flex-direction: column;
+          gap: 120px;
+          @include for-tablet-only{
+            gap: 64px;
+          }
+          .project-industry{
+            a{
+              figure{
+                display: flex;
+                gap: 64px;
+                @include for-tablet-only{
+                  flex-direction: column;
+                gap:16px;
+
+                }
+                .project-thumbnail{
+                  height: 500px;
+                  width: 400px;
+                  @include phone {
+                    height: auto;
+    width:100%;
+                  }
+                }
+                img{
+                  // height: 500px;
+                  // width: 400px;
+                }
+
+                .second-section{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                
+                figcaption{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+                  // padding-top: 32px;
+                  @include for-tablet-only{
+                    gap: 8px;
+                  }
+                  h6{
+                    
+/* caption1-overline/semibold-18 */
+font-family: "worksans-semibold";
+font-size: 18px;
+line-height: 165%; /* 29.7px */
+letter-spacing: 0.54px;
+text-transform: uppercase;
+background: linear-gradient(90deg, #EF8081 -39.31%, #F63132 20.53%, #9F1689 79.22%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+                  }
+                  p{
+                    color: #0F0E0E;
+font-family: "neue-haas-display-medium";
+font-size: 32px;
+line-height: 160%; /* 51.2px */
+letter-spacing: 0.64px;
+@include phone{
+  font-size: 24px;
+    line-height: 140%;
+}
+                  }
+                  .industry-desc{
+                    color: rgba(15, 14, 14, 0.80);
+font-family:"worksans-regular";
+// width: 416px;
+font-size: 16px;
+line-height: 160%; /* 25.6px */
+@include phone {
+  width: unset;
+}
+                  }
+                  .client-div{
+                    display: flex;
+                    gap: 42px;
+                    padding: 26px 0;
+                    img{
+
+                    }
+                    .rbl-logo{
+//                       width: 107px;
+// height: 21px;
+                    }
+                    @include for-tablet-only{
+                      gap: 72px;
+                    }
+                    @include phone {
+                     gap: 8px;
+                    }
+                  }
+                }}
+              }
+            }
+           
+          }
+          .type--2{
+            a{
+              figure{     
+              display: flex;
+              flex-direction: row-reverse;
+              @include for-tablet-only{
+              flex-direction:column;
+              padding-left: 30%;
+              }
+              @include phone{
+                flex-direction:column;
+                padding-left: unset;
+              }
+            }
+          }}
+          .type--4{
+            a{
+              figure{
+
+              
+              display: flex;
+              flex-direction: row-reverse;
+              @include for-tablet-only{
+                flex-direction:column;
+                padding-left: 30%;
+                }
+                @include phone{
+                  flex-direction:column;
+                  padding-left: unset;
+                }
+            }
+          }}
+        }
+      }
+    }
+    &.next-big-thing{
+
+      background-color: var(--ashwhite);
+      background: url('../../assets/img/global/work-with-us-bg.svg');
+      background-position: top center;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+    padding: 64px 180px 40px 180px;
+    @include for-tablet-only {
+      padding: 64px 180px 64px 42px;
+    }
+    @include phone {
+      padding: 48px 180px 48px 28px;
+    }
+    .content-section{
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      h3{
+        width: 654px;
+        color: var(--z-primary-black, #0F0E0E);
+
+/* H2-56/75Bold */
+font-family: "neue-haas-display-bold";
+font-size: 56px;
+
+line-height: 150%; /* 84px */
+@include phone{
+  font-size: 32px;
+  width: unset;
+}
+      }
+      a{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      
+      p{
+        font-family: "worksans-semibold";
+font-size: 24px;
+line-height: 180%; /* 43.2px */
+letter-spacing: 0.24px;
+text-transform: uppercase;
+background: var(--z-gradients-1, linear-gradient(90deg, #EF8081 0%, #F63132 61.98%, #9F1689 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+white-space: nowrap;
+      }
+    }}
+    .grad-div{
+      display: flex;
+      gap: 160px;
+      #grad_one_left{
+        width: 52px;
+        height: 280px;
+        margin-top: 42px;
+      }
+      #grad_two_right{
+        width: 24px;
+    height: 160px;
+      }
+    }
+    }
+  }
+}
+
+
+
+
+
+
+

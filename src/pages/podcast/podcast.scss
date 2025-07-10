@@ -1,0 +1,513 @@
+@import '../../assets/scss/breakpoints';
+
+.podcast-single-page {
+	.lines-behind-layout-wrapper {
+		display: none;
+	}
+	.demo--strip {
+		display: none;
+	}
+	.newsletter-form {
+		form {
+			.form-group {
+				.input-wrapper {
+					input {
+						border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.podcast-detail-page-wrapper {
+	section {
+		&.title-podcast-wrapper {
+			padding-bottom: 120px;
+			@include for-tablet-only {}
+			@include phone {
+				padding-bottom: 80px;
+			}
+			.div-wrap {
+				position: relative;
+				.grad {
+					position: absolute;
+					left: 180px;
+					top: 64px;
+				}
+				.heading-wrapper {
+					padding: 64px 0 88px 0;
+					@include for-tablet-only {
+						padding: 64px 0 64px 0;
+					}
+					@include phone {
+						padding: 48px 0 48px 0;
+						.left_container {
+							padding-left: 0;
+						}
+					}
+				}
+				.podcast-banner {
+					width: 100%;
+					height: 542px;
+					object-fit: cover;
+					object-position: center center;
+					@include for-tablet-only {
+						height: 356px;
+					}
+					@include phone {
+						height: 240px;
+					}
+				}
+				.podcast-embbedd {
+					padding: 88px 0 120px 0;
+					@include for-tablet-only {}
+					@include phone {
+						padding: 48px 0 48px 0;
+					}
+					iframe {
+						height: 156px;
+						width: 100%;
+						border-radius: 0;
+						// background: #121212;
+					}
+				}
+				.publish-details {
+					margin-bottom: 48px;
+					@include for-tablet-only {}
+					@include phone {
+						margin-bottom: 16px;
+					}
+					span {
+						color: var(--black-6);
+						&.episode-number {
+							font-family: "worksans-bold";
+						}
+					}
+				}
+			}
+		}
+		&.recommendation-podcast-wrapper {
+			background: var(--ashwhite);
+			padding: 164px 0 265px 0;
+			// margin-top: 120px;
+			@include for-tablet-only {
+				// margin-top: 64px;
+				padding: 104px 0 104px 0;
+			}
+			@include phone {
+				padding: 80px 0 80px 0;
+				// margin-top: 40px;
+			}
+			.div-wrap {
+				.heading-wrapper {
+					margin-bottom: 160px;
+					position: relative;
+					@include for-tablet-only {
+						margin-bottom: 80px;
+					}
+					@include phone {
+						margin-bottom: 56px;
+					}
+					.section-heading {
+						width: 70%;
+						@include for-tablet-only {}
+						@include phone {
+							width: 86%;
+							font-size: 32px;
+						}
+						&:before {
+							width: 86%;
+							@include for-tablet-only {}
+							@include phone {
+								width: 100%;
+							}
+						}
+						&.right_container {
+							@include for-tablet-only {}
+							@include phone {
+								padding-right: 0;
+							}
+						}
+					}
+					.grad {
+						position: absolute;
+						right: 0;
+						top: -64px;
+					}
+				}
+				.podcast-card-listing-wrapper {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.podcast--main {
+		.p-span {
+			font-size: 18px;
+			line-height: 160%;
+			color: var(--black-6);
+			font-family: "worksans-medium";
+			letter-spacing: 0;
+			@include for-tablet-only {}
+			@include phone {
+				font-size: 16px;
+			}
+			span {
+				display: block;
+				font-size: 24px;
+				line-height: 160%;
+				color: var(--pitch_black);
+				@include for-tablet-only {}
+				@include phone {
+					font-size: 14px;
+				}
+			}
+		}
+		.podcast-content-main {
+			display: grid;
+			grid-template-columns: auto auto;
+			align-items: flex-start;
+			grid-column-gap: 142px;
+			@include for-tablet-only {
+				grid-column-gap: 40px;
+			}
+			@include phone {
+				grid-template-columns: unset;
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: flex-start;
+				grid-column-gap: 0;
+				width: 100%;
+			}
+			.sidebar-podcast-details {
+				width: 227px;
+				position: sticky;
+				top: 80px;
+				@include for-tablet-only {}
+				@include phone {
+					width: 100%;
+					position: unset;
+					top: unset;
+					margin-top: 48px;
+				}
+				.podcast-people-wrap {
+					margin-bottom: 64px;
+					@include for-tablet-only {}
+					@include phone {
+						display: block;
+						justify-content: space-between;
+						align-items: flex-start;
+						margin-top: 0;
+						margin-bottom: 32px;
+					}
+					.naming-pods {
+						&.podcast-guest {
+							margin-bottom: 48px;
+							@include for-tablet-only {}
+							@include phone {
+								margin-bottom: 16px;
+							}
+						}
+					}
+				}
+				.podcast-sidebar-channel-listing {
+					margin-bottom: 96px;
+					@include for-tablet-only {}
+					@include phone {
+						margin-bottom: 48px;
+					}
+					.p-span {
+						margin-bottom: 16px;
+						@include for-tablet-only {}
+						@include phone {
+							margin-bottom: 8px;
+						}
+					}
+					ul {
+						@include for-tablet-only {}
+						@include phone {
+							display: flex;
+						}
+						li {
+							margin-bottom: 24px;
+							@include for-tablet-only {}
+							@include phone {
+								margin-bottom: 0;
+								margin-right: 8px;
+							}
+							figure {
+								display: flex;
+								background: var(--ashwhite);
+								padding: 10px 12px;
+								display: flex;
+								justify-content: flex-start;
+								align-items: center;
+								@include for-tablet-only {}
+								@include phone {
+									padding: 8px;
+									height: 56px;
+									width: 56px;
+								}
+								img {
+									margin-right: 12px;
+									@include for-tablet-only {}
+									@include phone {
+										margin-right: 0;
+									}
+								}
+								figcaption {
+									@include for-tablet-only {}
+									@include phone {
+										display: none;
+									}
+									p {
+										font-size: 12px;
+										color: var(--black-6);
+										span {
+											font-size: 16px;
+											display: block;
+											font-family: "worksans-medium";
+											color: var(--pitch_black);
+										}
+									}
+								}
+							}
+							&:last-of-type {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				.recommended-project-tab {
+					figure {
+						>img {
+							object-fit: cover;
+							object-position: center center;
+							width: 220px;
+							height: 202px;
+							margin-bottom: 24px;
+						}
+						figcaption {
+							p {
+								display: flex;
+								align-items: center;
+								span {
+									background: var(--ashwhite);
+									border-radius: 100%;
+									height: 32px;
+									width: 32px;
+									display: inline-flex;
+									justify-content: center;
+									align-items: center;
+									margin-left: 16px;
+									img {
+										transform: rotate(-90deg);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.single-podcast-content {
+				.content-div {
+					.synopsis {
+						margin-bottom: 48px;
+					}
+					p {
+						font-size: 18px;
+						line-height: 180%;
+						font-family: "worksans-regular";
+						@include for-tablet-only {}
+						@include phone {
+							font-size: 16px;
+							line-height: 160%;
+						}
+					}
+					p + p {
+						margin-top: 48px;
+						@include for-tablet-only {}
+						@include phone {
+							margin-top: 24px;
+						}
+					}
+					.watch-bttn {
+						margin-bottom: 108px;
+						display: inline-block;
+						@include for-tablet-only {}
+						@include phone {
+							margin-top: 32px;
+							margin-bottom: 32px;
+						}
+					}
+					.watch-bttn {
+						border: 1px solid var(--black-2);
+						padding: 12px 20px;
+						@include for-tablet-only {}
+						@include phone {
+							padding: 12px;
+						}
+						span {
+							color: var(--black-8);
+							font-size: 18px;
+							line-height: 160%;
+							font-family: "worksans-medium";
+							@include for-tablet-only {}
+							@include phone {
+								font-size: 14px;
+								line-height: 160%;
+							}
+						}
+						img {
+							margin-left: 16px;
+							@include for-tablet-only {}
+							@include phone {
+								margin-left: 8px;
+							}
+						}
+					}
+					h4 {
+						margin-bottom: 32px;
+					}
+					p {
+						b {
+							font-family: "worksans-semibold";
+						}
+					}
+					p + a {
+						margin-top: 48px;
+						display: inline-block;
+						@include for-tablet-only {}
+						@include phone {
+							margin-top: 32px;
+						}
+					}
+					.main-podcast-content {
+						.transcript {
+							overflow: hidden;
+							margin-bottom: 40px;
+						}
+						.expanding-transcript-bttn {
+							background: transparent;
+							border: none;
+							padding: 0;
+							font-size: 24px;
+							line-height: 165%;
+							letter-spacing: 0.03em;
+							text-decoration-line: underline;
+							text-transform: capitalize;
+							color: var(--pitch_black);
+							font-family: "worksans-bold";
+							@include for-tablet-only {}
+							@include phone {
+								font-size: 18px;
+							}
+							img {
+								margin-left: 12px;
+								filter: invert(100%) contrast(100) brightness(-200%);
+								&.icon-rotate {
+									transform: rotate(180deg);
+								}
+							}
+						}
+						&:empty {
+							display: none;
+						}
+					}
+
+					.podcast-video-wrapper {
+						margin-top: 40px;
+						.wrapper {
+							.video-grid {
+								.frames {
+									display: flex;
+									gap: 16px;
+									iframe {
+										width: 100%;
+										height: 220px;
+										&:only-of-type {
+											height: 300px;
+										}
+									}
+									iframe[src=""] {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+					
+					.wp-cols {
+						display: grid;
+						grid-template-columns: repeat(3,1fr);
+						align-items: flex-start;
+						margin-bottom: 104px;
+						@include for-tablet-only {}
+						@include phone {
+							grid-template-columns: repeat(1,1fr);
+							margin-bottom: 48px;
+						}
+						.wp-col {
+							padding: 0 0 0 16px;
+							border-right: 1px solid var(--black-1);
+							@include for-tablet-only {}
+							@include phone {
+								padding: 0 0 16px 0;
+								margin-bottom: 16px;
+								border-right: 0;
+								border-bottom: 1px solid var(--black-1);
+							}
+							.bio {
+								margin-bottom: 16px;
+								font-size: 16px;
+								line-height: 160%;
+							}
+							figure {
+								display: flex;
+								align-items: center;
+								img {
+									width: 48px;
+									height: 48px;
+									border-radius: 100%;
+									object-fit: cover;
+									object-position: center center;
+								}
+								figcaption {
+									margin-left: 8px;
+									.designation {
+										line-height: 160%;
+										font-size: 16px;
+										font-family: "worksans-semibold";
+										span {
+											display: block;
+											font-size: 14px;
+											color: var(--black-4);
+											font-family: "worksans-regular";
+										}
+									}
+								}
+							}
+							&:first-of-type {
+								padding: 0 16px 0 0;
+								@include for-tablet-only {}
+								@include phone {
+									padding: 0 0 16px 0;
+								}
+							}
+							&:last-of-type {
+								border: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

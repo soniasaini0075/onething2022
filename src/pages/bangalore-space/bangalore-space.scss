@@ -1,0 +1,258 @@
+@import "../../assets/scss/breakpoints";
+
+.bangalorespace-page {
+	.lines-behind-layout-wrapper {
+		display: none;
+	}
+	section {
+		&.demo--strip {
+			display: none;
+		}
+	}
+}
+
+.bangalorespace-page-wrapper {
+	section {
+		&.our-projects-wrapper {
+			padding: 120px 0 80px 0;
+			.container {
+				.gr-box {
+					top: 0;
+				}
+			}
+		}
+		&.bangalorespace-hero-wrap {
+			.div-wrap {
+				padding-top: 120px;
+				@include for-tablet-only {}
+				@include phone {
+					padding-top: 80px;	
+				}
+				.container {
+					position: relative;
+					.grad {
+						position: absolute;
+						top: 14%;
+						left: 0;
+					}
+				}
+				.heading-wrapper {
+					padding-left: 180px;
+					padding-bottom: 56px;
+					@include for-tablet-only {}
+					@include phone {
+						padding-left: 0;
+						padding-bottom: 40px;
+					}
+					h1 {
+						margin-bottom: 24px;
+					}
+					.cta-wrapper {
+						margin: 56px 0;
+						@include for-tablet-only {}
+						@include phone {
+							margin: 40px 0;
+						}
+					}
+				}
+				.page-banner {
+					width: 100%;
+					@include for-tablet-only {}
+					@include phone {
+						padding-right: 24px;
+					}
+					img {
+						width: 100%;
+						height: 511px;
+						object-fit: cover;
+						object-position: center center;
+						@include for-tablet-only {}
+						@include phone {
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+		&.beyond-classrooms-wrapper {
+			position: relative;
+			padding: 140px 0;
+			@include phone {
+				padding: 80px 0;
+			}
+			.grad {
+				position: absolute;
+				bottom: 140px;
+				left: 180px;
+			}
+			.custom-container {
+				.section-heading {
+					margin-bottom: 80px;
+					@include for-tablet-only {}
+					@include phone {
+						margin-bottom: 40px;
+					}
+					&:before {
+						width: 445px;
+						@include for-tablet-only {}
+						@include phone {
+							width: 208px;
+						}
+					}
+				}
+				p {
+					margin-top: 40px;
+					margin-bottom: 98px;
+					@include phone {
+						margin-bottom: 40px;
+					}
+				}
+				.left_container {
+					@include phone {
+						padding-left: 0;
+					}
+				}
+				.content-grid {
+					grid-template-columns: repeat(2, 1fr);
+					align-items: flex-start;
+					@include phone {
+						grid-template-columns: repeat(1, 1fr);
+						align-items: flex-start;
+						gap: 64px;
+					}
+					.content-div {
+						width: 347px;
+						@include for-tablet-only {}
+						@include phone {
+							width: 100%;
+						}
+						.accordion-content-area {
+							ul {
+								display: flex;
+								flex-direction: column;
+								width: fit-content;
+								width: -moz-fit-content;
+								width: -webkit-fit-content;
+								li {
+									display: block;
+									padding: 10px 16px;
+									color: var(--pitch_black);
+									margin-right: 16px;
+									margin-bottom: 16px;
+									border: 1px solid rgba(229, 54, 23, 0.1);
+									display: inline-block;
+									font-style: normal;
+									font-weight: 500;
+									font-size: 16px;
+									margin-bottom: 16px;
+									&:last-of-type {
+										margin-bottom: 0;
+									}
+								}
+							}
+						}
+					}
+					.visual-glance {
+						figure {
+							width: 445px;
+							@include for-tablet-only {}
+							@include phone {
+								width: 100%;
+							}
+							img {
+								width: 100%;
+								height: 552px;
+								object-fit: cover;
+								object-position: center center;
+								@include for-tablet-only {}
+								@include phone {
+									height: 326px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.design-with-purpose-wrapper {
+			background: var(--ashwhite);
+			.container {
+				position: relative;
+				.grad {
+					position: absolute;
+					&.small {
+						left: 0;
+						top: 16%;
+					}
+					&.medium {
+						right: 0;
+						top: 0;
+					}
+				}
+			}
+			.div-wrap {
+				padding: 140px 0;
+				@include for-tablet-only {}
+				@include phone {
+					padding: 80px 0;
+				}
+				.heading-wrapper {
+					width: 720px;
+					margin: 0 auto;
+					margin-bottom: 116px;
+					@include for-tablet-only {}
+					@include phone {
+						width: 100%;
+						margin-bottom: 80px;
+					}
+					.section-heading {
+						margin-bottom: 40px;
+						text-transform: initial;
+						&:before {
+							width: 335px;
+						}
+					}
+				}
+				.dwp {
+					width: 100%;
+					img {
+						width: 100%;
+						height: 548px;
+						object-fit: cover;
+						object-position: center center;
+						@include for-tablet-only {}
+						@include phone {
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+		&.faq-accords-wrapper {
+			padding-bottom: 5rem;
+			.main__ {
+				.accordion {
+					margin-bottom: 40px;
+					.accordion-item {
+						background: transparent;
+						.accordion-header {
+							.accordion-button {
+								box-shadow: none;
+								background: transparent;
+								font-size: 28px;
+								color: var(--pitch_black);
+								font-family: "worksans-semibold", sans-serif;
+
+								&:not(.collapsed) {
+									background: transparent;
+									font-size: 28px;
+									filter: grayscale(1) contrast(100);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

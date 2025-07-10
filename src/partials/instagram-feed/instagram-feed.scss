@@ -1,0 +1,77 @@
+@import '../../assets/scss/breakpoints';
+
+section {
+	&.instagram-feed-wrapper {
+		padding: 0 0 0 0;
+		background: var(--ashwhite);
+		@include for-tablet-only {
+			padding: 0 0 0 0;
+		}
+		@include phone {
+			padding: 0 0 0 0;
+		}
+		._2R-kh {
+			overflow: scroll;
+			flex-wrap: nowrap;
+			padding-bottom: 16px;
+			// margin-left: -16px;
+			._wPDyp {
+				margin: 0 8px;
+				height: 389px;
+				@include for-tablet-only {}
+				@include phone {
+					height: 232px;
+				}
+				.ig-instagram-link {
+					transition-duration: 0.4s;
+					._vzTHL {
+						width: 389px;
+						height: 389px;
+						object-position: center center;
+						object-fit: cover;
+						@include for-tablet-only {}
+						@include phone {
+							width: 232px;
+							height: 232px;
+						}
+					}
+					._3xnQP {
+						height: 45px;
+						top: unset;
+						bottom: 0;
+						justify-content: flex-start;
+						.instagram-count-item {
+							padding-left: 136px;
+							.icon {
+								color: var(--pitch_black);
+							}
+						}
+						&:hover {
+							transition-duration: 0.4s;
+							background: var(--white-1);
+						}
+						&:before {
+							position: absolute;
+							content: "Follow us";
+							left: 24px;
+							font-size: 16px;
+							line-height: 160%;
+							font-family: "worksans-regular", sans-serif;
+							font-weight: 600;
+							letter-spacing: 0.03em;
+							text-transform: uppercase;
+							color: var(--black-6);
+						}
+					}
+					&:hover {
+						._3xnQP {
+							transition-duration: 0.4s;
+							opacity: 1;
+							background: var(--white-1);
+						}
+					}
+				}
+			}
+		}
+	}
+}

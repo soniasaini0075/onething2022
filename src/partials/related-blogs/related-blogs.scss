@@ -1,0 +1,58 @@
+@import '../../assets/scss/breakpoints';
+
+.related-blogs-wrapper {
+	section {
+		&.related-blogs-main {
+			padding: 152px 0;
+			background: var(--ashwhite);
+			position: relative;
+			z-index: 1;
+			@include for-tablet-only {}
+			@include phone {
+				padding: 96px 0 0 0;
+			}
+			.div-wrap {
+				>.container {
+					position: relative;
+					.grad {
+						position: absolute;
+						&.gr-box1 {
+							left: 0;
+							top: 40px;
+						}
+						&.gr-box2 {
+							right: 0;
+							top: -80px;
+						}
+					}
+				}
+				.left_container {
+					@include for-tablet-only {}
+					@include phone {
+						padding-left: 0;
+					}
+					.section-heading {
+						margin-bottom: 205px;
+						@include for-tablet-only {}
+						@include phone {
+							margin-bottom: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.top-related-blogs {
+		.info-container {
+			.accordion-info {
+				.qodef-m-navigation {
+					.qodef-m-title-image-wrapper {
+						.qodef-m-image {
+							z-index: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

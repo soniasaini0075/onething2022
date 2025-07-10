@@ -1,0 +1,177 @@
+@import "../../assets/scss/breakpoints";
+@import "../../assets/scss/colors";
+
+
+.cultivate--wrapper--main {
+    section {
+      z-index: 2;
+      position: relative;
+    &.cultivating-culture-wrapper {
+      padding: 80px 0;
+      @include phone {
+        padding: 48px 0 56px 0;
+      }
+      .culture-intro {
+        > .col-md-4 {
+          padding: 0;
+          position: relative;
+          @include for-tablet-only {
+            display: none;
+          }
+          @include phone {
+          }
+          .gr-box {
+            position: absolute;
+            left: 180px;
+            top: -80px;
+          }
+        }
+        .col-md-8 {
+          @include for-tablet-only {
+            max-width: 100%;
+            width: 100%;
+          }
+          @include phone {
+          }
+        }
+        .culture-heading {
+          width: 63%;
+          margin-bottom: 64px;
+          padding-left: 60px;
+          @include for-tablet-only {
+            padding-left: 0;
+            margin-bottom: 56px;
+            width: 100%;
+          }
+          @include phone {
+          }
+          .section-heading {
+            line-height: 100%;
+            margin-bottom: 40px;
+            text-transform: initial;
+            @include for-tablet-only {
+              margin-bottom: 34px;
+            }
+            @include phone {
+              width: 100%;
+              display: inline-block;
+              &:before {
+                width: 94%;
+              }
+            }
+          }
+          .culture-brief {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: var(--black-8);
+            @include phone {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .slider-row {
+        @include for-tablet-only {
+          flex-direction: column;
+        }
+        @include phone {
+        }
+        .image-slider-wrap {
+          position: relative;
+          @include phone {
+            padding-right: 24px;
+          }
+          .slick-dots {
+            @include for-tablet-only {
+            }
+            @include phone {
+              margin-top: 0;
+              text-align: right;
+            }
+          }
+          .image-slider-overlay-bttn {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba($color: $zest-black, $alpha: 0);
+            cursor: pointer;
+            @include for-tablet-only {
+              display: none;
+              cursor: none !important;
+            }
+          }
+          &.left-image-slider-wrap {
+            @include phone {
+              display: none;
+            }
+          }
+        }
+        .our-culture-slider {
+          .slide-cell {
+            img {
+              width: 100%;
+              object-fit: cover;
+              object-position: center center;
+            }
+          }
+          &.left-image-slider {
+            margin-top: -104px;
+            overflow: hidden;
+            @include for-tablet-only {
+              margin-top: 0;
+            }
+            @include phone {
+            }
+            .slide-cell {
+              img {
+                height: 400px;
+                width: 356px;
+                object-fit: cover;
+                object-position: center center;
+                @include phone {
+                  height: 200px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          &.right-image-slider {
+            overflow: hidden;
+            .slide-cell {
+              img {
+                height: 400px;
+                width: 782px;
+                object-fit: cover;
+                object-position: center center;
+                @include for-tablet-only {
+                  width: 100%;
+                  height: 280px;
+                }
+                @include phone {
+                  width: 100%;
+                  height: 200px;
+                }
+              }
+            }
+          }
+        }
+        .col-md-4 {
+          padding-right: 40px;
+          padding-left: 0;
+          @include for-tablet-only {
+            padding-right: 0;
+            margin-bottom: 32px;
+          }
+          @include phone {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

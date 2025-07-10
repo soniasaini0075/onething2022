@@ -1,0 +1,595 @@
+@import '../../assets/scss/breakpoints';
+
+.careers-page {
+	.lines-behind-layout-wrapper {
+		display: none;
+	}
+	section {
+		&.demo--strip {
+			display: none;
+		}
+	}
+}
+
+.careers-page-wrapper {
+	overflow: hidden;
+	section {
+		&.page-heading {
+			padding-bottom: 0;
+			.left_container {
+				@include for-tablet-only {
+					padding-left: 0;
+				}
+			}
+			.heading-wrapper {
+				h1 {
+					text-transform: initial;
+				}
+				.grad {
+					&.gr-box1 {
+						top: 82px;
+					}
+					&.gr-box2 {
+						top: 60%;
+						left: 0;
+					}
+					@include for-tablet-only {}
+					@include phone {
+						display: none;
+					}
+				}
+				.bttn-primary {
+					width: fit-content;
+					width: -moz-fit-content;
+					width: -webkit-fit-content;
+					margin-top: 56px;
+				}
+			}
+		}
+		&.banner-image-section {
+			padding-bottom: 144px;
+			@include phone{
+				padding-bottom: 64px;
+			}
+			.div-wrap {
+				padding-right: 0;
+				@include phone{
+					padding-right: 24px;
+				}
+			}
+			figure {
+				img {
+					height: 512px;
+					animation: moving-out-rev 2s ease-in-out;
+					@include phone {
+						height: 206px;
+					}
+				}
+			}
+		}
+		&.grow-together-section {
+			.div-wrap {
+				.left_container {
+					@include for-tablet-only {
+						padding-left: 0;
+					}
+					.service-accordian {
+						margin-bottom: 80px;
+						@include phone {
+							margin-bottom: 0;
+						}
+						.accordion {
+							position: relative;
+							height: 304px;
+							@include phone {
+								height: auto;
+							}
+							.accordion-item {
+								background-color: #fff;
+								position: absolute;
+								@include phone {
+									position: unset;
+								}
+								&:first-child {
+									top: 0;
+									z-index: 4;
+								}
+								&:nth-child(2) {
+									top: calc(46px + 16px);
+									z-index: 3;
+								}
+								&:nth-child(3) {
+									top: calc((46px + 16px) * 2);
+									z-index: 2;
+								}
+								&:last-child {
+									top: calc((46px + 16px) * 3);
+									z-index: 0;
+								}
+							}
+						}
+					}
+				}
+				position: relative;
+				.grad {
+					position: absolute;
+					&.gr-box1 {
+						left: 0;
+						top: 50%;
+					}
+					&.gr-box2 {
+						right: 0;
+						top: 0;
+						display: none;
+					}
+				}
+				.section-heading {
+					margin-bottom: 160px;
+					@include for-tablet-only {
+						margin-bottom: 70px;
+						width: 100%;
+					}
+				}
+				.accordion-content-area {
+					width: 358px;
+					@include for-tablet-only {
+						width: 100%;
+					}
+				}
+				.gallery-career {
+					margin-top: -508px;
+					padding-bottom: 120px;
+					img {
+						&.first-career {
+							margin-top: 600px;
+							width: 100%;
+							max-width: 445px;
+							@include phone {
+								margin-bottom: 70px;
+							}
+						}
+						&.second-career {
+							margin-left: 180px;
+							position: absolute;
+							width: 100%;
+							max-width: 462px;
+							@include for-tablet-only{
+								display: none;
+							}
+							// height: 552px;
+						}
+						&.third-career {
+							width: 348px;
+							// height: 370px;
+							display: block;
+							margin-left: auto;
+							margin-top: 3em;
+						}
+					}
+				}
+			}
+		}
+		&.services-pratice-wrapper {
+			padding: 120px 0 162px 0;
+			@include for-tablet-only{
+				padding: 80px 0 90px 0;
+			}
+			@include phone{
+				padding: 80px 0 0 0;
+			}
+			.div-wrap {
+				.container {
+					.section-heading {
+						margin-bottom: 60px;
+					}
+					.services-p-tab {
+						margin-bottom: 72px;
+						.nav-link {
+							@include phone {
+								padding-bottom: 24px;
+							}
+						}
+					}
+				}
+				.tab-content {
+					#controlled-tab-example-tabpane-one-o-one {
+						.brHeight {
+							.img-fluid {
+								@include phone {
+									object-position: 44%;
+								}
+							}
+						}
+					}
+					#controlled-tab-example-tabpane-huddles {
+						.brHeight {
+							.img-fluid {
+								@include phone {
+									object-position: 56%;
+								}
+							}
+						}
+					}
+					figure {
+						img {
+							width: 100%;
+							object-position: center center;
+						}
+					}
+				}
+			}
+		}
+		&.job-postings-wrapper {
+			background: var(--ashwhite);
+			position: relative;
+			z-index: 9;
+			.div-wrap {
+				padding: 120px 0 104px 0;
+				position: relative;
+				@include phone {
+					padding: 88px 0 88px 0;
+				}
+				.container {
+					.left_container {
+						@include for-tablet-only{
+							padding: 0;
+						}
+					}
+				}
+				.grad {
+					position: absolute;
+					&.medium {
+						right: 180px;
+						top: 56px;
+					}
+					&.small {
+						bottom: 109px;
+					}
+				}
+				h3 {
+					margin-bottom: 104px;
+					@include phone {
+						margin-bottom: 48px;
+						font-size: 38px;
+					}
+				}
+				.careers-list-jobs {
+					.job-row {
+						display: flex;
+						flex-direction: row;
+						@include for-tablet-only {
+							flex-direction: column;
+						}
+						.job-col {
+							&.col-nav {
+								width: 180px;
+								display: none;
+								@include for-tablet-only {
+									width: 100%;
+								}
+								.nav-pills {
+									@include for-tablet-only {
+										flex-direction: row !important;
+										overflow-x: scroll;
+										flex-wrap: nowrap;
+										column-gap: 20px;
+									}
+									.nav-item {
+										margin-bottom: 32px;
+										.nav-link {
+											font-size: 24px;
+											line-height: 160%;
+											color: var(--pitch_black);
+											padding: 0;
+											width: fit-content;
+											width: -moz-fit-content;
+											width: -webkit-fit-content;
+											position: relative;
+											&:before {
+												content: "";
+												background: var(--dark_pink_gradient);
+												display: inline-block;
+												height: 3px;
+												transition: width 0.8s;
+												min-width: 0;
+												position: absolute;
+												left: 0;
+												top: 50%;
+												transform: translateY(-50%);
+											}
+											&.active {
+												background: transparent;
+												background: var(--dark_pink_gradient);
+												-webkit-background-clip: text;
+												-webkit-text-fill-color: transparent;
+												background-clip: text;
+												text-fill-color: transparent;
+												padding-left: 64px;
+												&:before {
+													min-width: 34px;
+													transition: all 0.3s ease;
+												}
+											}
+										}
+										&:last-of-type {
+											margin-bottom: 0;
+										}
+									}
+								}
+							}
+							&.col-main {
+								margin-left: 140px;
+								width: calc(180px * 4);
+								@include for-tablet-only {
+									margin-left: 0;
+									width: 100%
+								}
+								.tab-content {
+									// min-height: 700px;
+									ul {
+										padding-top: 24px;
+										border-top: 2px solid var(--black-5);
+										li {
+											width: 100%;
+											transition-duration: 0.4s;
+											margin-bottom: 24px;
+											padding-bottom: 24px;
+											border-bottom: 2px solid var(--black-5);
+											a {
+												display: flex;
+												justify-content: space-between;
+												align-items: center;
+											}
+											h6 {
+												letter-spacing: 0.035em;
+												small {
+													display: block;
+													margin-top: 8px;
+													font-size: 16px;
+													line-height: 160%;
+													color: var(--black-6);
+													font-family: "worksans-medium";
+													text-transform: capitalize;
+													letter-spacing: 0;
+												}
+											}
+											.red-arrow {
+												transition-duration: 0.4s;
+											}
+											&:last-of-type {
+												margin-bottom: 0;
+											}
+											&:hover {
+												transition-duration: 0.4s;
+												.red-arrow {
+													transition-duration: 0.4s;
+													transform: translateX(-24px);
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.our-values {
+			background: url('../../assets/img/careers/careers-bg.svg');
+			background-repeat: no-repeat;
+			.slick-list {
+				padding-left: 150px;
+				@include phone {
+					padding-left: 93px;
+				}
+			}
+			.impact_card {
+				min-height: 308px;
+				h6 {
+					margin-bottom: 24px;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 165%;
+					font-family: "worksans-bold";
+					padding-left: 16px;
+					position: relative;
+					&:before {
+						position: absolute;
+						content: "";
+						background: var(--white);
+						border-radius: 100%;
+						height: 8px;
+						width: 8px;
+						left: 0;
+						top: 11px;
+					}
+				}
+				p {
+					max-width: 100%;
+					font-size: 16px;
+				}
+			}
+		}
+		&.team-testimony-section {
+			background: var(--ashwhite);
+			position: relative;
+			padding: 112px 0 144px 0;
+			@include phone {
+				padding: 80px 0 90px 0;
+			}
+			.div-wrap {
+				position: relative;
+				@include for-tablet-only {
+					.left_container, .right_container {
+						padding: 0;
+					}
+				}
+				.grad {
+					position: absolute;
+					&.small {
+						right: 180px;
+					}
+					&.medium {
+						top: 400px;
+					}
+				}
+				.section-heading {
+					margin-bottom: 96px;
+					@include phone {
+						margin-bottom: 40px;
+					}
+				}
+				.team-content {
+					margin-bottom: 164px;
+					@include phone{
+						padding-right: 24px;
+						margin-bottom: 80px;
+					}
+					.testimony_content {
+						@include for-tablet-only {
+							padding-left: 0;
+						}
+						figure {
+							display: flex;
+							align-items: flex-end;
+							height: 436px;
+							@include phone {
+								flex-direction: column;
+								row-gap: 56px;
+								height: auto;
+							}
+							img {
+								width: 342px;
+								@include phone {
+									width: 100%;
+								}
+								height: 436px;
+								object-fit: cover;
+								object-position: center center;
+							}
+							figcaption {
+								margin-left: 104px;
+								@include for-tablet-only {
+									margin-left: 44px;
+								}
+								@include phone {
+									margin-left: 0;
+								}
+								position: relative;
+								&:before {
+									position: absolute;
+									content: "";
+									background: url('../../assets/img/global/quote-grey.svg');
+									width: 110px;
+									height: 79px;
+									top: -100%;
+									left: 0;
+									transform: translateY(-50%);
+								}
+								p {
+									margin-bottom: 32px;
+									font-family: "worksans-medium";
+									font-weight: 500;
+									font-size: 20px;
+								}
+								h6 {
+									font-size: 18px;
+									letter-spacing: 0.03em;
+									text-transform: uppercase;
+									line-height: 165%;
+									font-family: "worksans-bold";
+									small {
+										font-family: "worksans-regular";
+										font-size: 14px;
+										text-transform: capitalize;
+										display: block;
+										color: var(--pitch_black);
+									}
+								}
+							}
+						}
+					}
+				}
+				.caree-follow-wrap {
+					figure {
+						position: relative;
+						@include for-tablet-only {
+							width: 95%;
+						}
+						@include phone {
+							width: 100%;
+						}
+						img {
+							width: 100%;
+							height: 540px;
+							object-fit: cover;
+							object-position: center;
+						}
+						figcaption {
+							position: absolute;
+							right: -80px;
+							bottom: 0;
+							@include phone {
+								right: unset;
+								bottom: -55px;
+								display: flex;
+								align-items: center;
+								gap: 18px;
+
+							}
+							text-align: center;
+							p {
+								font-size: 16px;
+								line-height: 160%;
+								color: var(--black-6);
+								transform: rotate(90deg);
+								margin-bottom: 64px;
+								letter-spacing: 0.03em;
+								text-transform: uppercase;
+								@include phone {
+									margin-bottom: 0;
+									transform: rotate(0);
+								}
+							}
+							ul {
+								@include phone {
+									display: flex;
+									align-items: center;
+									gap: 18px;
+								}
+								li {
+									margin-bottom: 16px;
+									@include phone {
+										margin-bottom: 0;
+									}
+									a {
+										svg {
+											filter: invert(1) grayscale(100%) contrast(100%) brightness(0);
+										}
+									}
+									&:hover {
+										a {
+											svg {
+												filter: unset;
+											}
+										}
+									}
+									&:last-of-type {
+										margin-bottom: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

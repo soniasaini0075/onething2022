@@ -1,0 +1,444 @@
+@import "../../assets/scss/breakpoints";
+
+body {
+  &.ods-page {
+    .lines-behind-layout-wrapper {
+      display: none;
+    }
+    .clientele-wrapper {
+      .our-clients {
+        .custom-heading-wrapper {
+          .section-heading {
+            width: 70%;
+          }
+        }
+      }
+    }
+    section {
+      &.demo--strip {
+        display: none;
+        &.toshow {
+          display: block;
+          .grad {
+            position: absolute;
+            &.large {
+              right: 158px;
+              top: 0;
+            }
+            &.small {
+              right: 0;
+              top: 88px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ods-page-wrapper {
+  section {
+    &.page-heading {
+      .heading-wrapper {
+        padding: 100px 0 64px 0;
+        @include for-tablet-only {
+          padding: 64px 0;
+        }
+        h1 {
+          text-transform: initial;
+          padding-left: 160px;
+          margin-bottom: 32px;
+          @include for-tablet-only {
+            padding-left: 0;
+          }
+          @include phone {
+            font-size: 44px;
+            margin-bottom: 0;
+          }
+        }
+        .cta-wrapper {
+          margin-top: 32px;
+          padding-left: 160px;
+        //   display: none;
+        @include for-tablet-only {
+        }
+        @include phone {
+          padding: 0;
+        }
+      }
+      .grad {
+        &.small {
+          top: 80px;
+        }
+        &.gr-box {
+          right: 0;
+          top: 80%;
+        }
+      }
+    }
+  }
+  &.banner-image-section {
+    padding-top: 64px;
+    .parallax {
+      @include phone {
+        height: auto !important;
+      }
+    }
+  }
+  &.ux-role-wrapper {
+    padding: 140px 0;
+    @include phone {
+      padding: 80px 0;
+    }
+    .section-heading {
+      text-transform: initial;
+      @include phone {
+       width: 90%;
+     }
+     &:before {
+      width: 349px;
+      @include for-tablet-only {}
+      @include phone {
+        width: 208px;
+      }
+    }
+  }
+  .custom-wrapper {
+    position: relative;
+    padding-right: 540px;
+    @include for-tablet-only {
+    }
+    @include phone {
+      padding-right: 0;
+    }
+    .left_container {
+      @include for-tablet-only {
+      }
+      @include phone {
+        padding: 0;
+      }
+    }
+    .grad {
+      position: absolute;
+      &.gr-box {
+        right: 360px;
+        bottom: 0;
+      }
+      &.gr-box2 {
+        right: 180px;
+      }
+    }
+    p {
+      margin-top: 40px;
+      @include phone {
+       width: 90%;
+     }
+   }
+ }
+}
+&.beyond-classrooms-wrapper {
+  position: relative;
+  padding-bottom: 140px;
+  @include phone {
+    padding-bottom: 64px;
+  }
+  .grad {
+    position: absolute;
+    bottom: 140px;
+    left: 180px;
+  }
+  .custom-container {
+    .section-heading {
+      &:before {
+        @include for-tablet-only {}
+        @include phone {
+          width: 208px;
+        }
+      }
+    }
+    p {
+      margin-top: 40px;
+      margin-bottom: 98px;
+      @include phone {
+       margin-bottom: 40px;
+     }
+   }
+   .left_container {
+     @include phone {
+      padding-left: 0;
+    }
+  }
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    @include phone {
+      grid-template-columns: repeat(1, 1fr);
+      align-items: flex-start;
+      gap: 64px;
+    }
+    .content-div {
+      width: 347px;
+      .accordion-content-area {
+        .accordion {
+          .accordion-item {
+            .accordion-collapse {
+              .accordion-body {
+                p {
+                  margin: 8px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .visual-glance {
+      figure {
+        img {
+        }
+      }
+    }
+  }
+}
+}
+&.learning-from-industry-leaders-wrapper {
+  background: var(--pitch_black);
+  padding: 172px 0 138px 0;
+  @include for-tablet-only {
+  }
+  @include phone {
+    padding: 64px 0 64px 0;
+  }
+  .div-wrap {
+    .heading-wrapper {
+      margin-bottom: 64px;
+      .section-heading {
+        color: var(--white);
+        text-transform: initial;
+        margin-bottom: 32px;
+        @include for-tablet-only {
+        }
+        @include phone {
+          font-size: 40px;
+        }
+        &:before {
+          background: var(--white);
+          width: 320px;
+        }
+      }
+      p {
+        color: var(--white-8);
+        width: 52%;
+        @include for-tablet-only {
+        }
+        @include phone {
+          width: 100%;
+        }
+      }
+    }
+    .mentors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: flex-start;
+      grid-column-gap: 150px;
+      grid-row-gap: 48px;
+      @include for-tablet-only {
+      }
+      @include phone {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 40px;
+      }
+      .mentors {
+        .mentor-card {
+          figure {
+            width: 281px;
+            @include for-tablet-only {
+            }
+            @include phone {
+              width: 100%;
+            }
+            img {
+              width: 100%;
+              height: 285px;
+              object-fit: cover;
+              object-position: center center;
+              margin-bottom: 24px;
+              @include for-tablet-only {
+              }
+              @include phone {
+                height: 200px;
+              }
+            }
+            figcaption {
+              h5 {
+                color: var(--white);
+                @include for-tablet-only {
+                }
+                @include phone {
+                  font-size: 18px;
+                }
+                small {
+                  font-family: "worksans-semibold";
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+&.become-mentor-wrapper {
+  background-color: var(--ashwhite);
+  background: url("../../assets/img/global/work-with-us-bg.svg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0 88px 0;
+  @include for-tablet-only {
+  }
+  @include phone {
+    padding: 40px 0 48px 0;
+  }
+  .grad {
+    position: absolute;
+    &.medium {
+      right: 180px;
+    }
+    &.large {
+      left: 180px;
+      bottom: 40px;
+    }
+  }
+  .div-wrap {
+    .container {
+      @include for-tablet-only {
+      }
+      @include phone {
+        padding: 0;
+      }
+    }
+    h2 {
+      text-transform: initial;
+    }
+    .buttons-wrapper {
+      margin-top: 32px;
+      p {
+        display: flex;
+        font-size: 18px;
+        font-family: "worksans-semibold";
+        line-height: 180%;
+        letter-spacing: 0.24px;
+        text-transform: uppercase;
+        @include for-tablet-only {}
+        @include phone {
+          display: block;
+        }
+        .bttn-secondary {
+          margin-left: 16px;
+          font-size: inherit;
+          letter-spacing: inherit;
+          text-transform: inherit;
+          @include phone {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+&.partnerships-wrapper {
+  padding: 100px 0;
+  background: url("../../assets/img/about/awards-bg.svg");
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  .div-wrap {
+    .heading-wrapper {
+      margin-bottom: 64px;
+      .section-heading {
+        color: var(--white);
+        &:before {
+          background: var(--white);
+        }
+      }
+    }
+    .partnerships-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+      gap: 40px;
+      @include for-tablet-only {
+      }
+      @include phone {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .partner-info {
+        height: 330px;
+        padding: 40px;
+        border: 1px solid var(--white-4);
+        @include for-tablet-only {
+        }
+        @include phone {
+          height: auto;
+          padding: 24px 24px;
+        }
+        h5 {
+          color: var(--white);
+          margin-bottom: 16px;
+          font-size: 22px;
+          line-height: 120%;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 18px;
+          line-height: 160%;
+          color: var(--white);
+          margin-bottom: 40px;
+        }
+        figure {
+          text-align: right;
+          .school-logo {
+            width: 222px;
+            height: 93px;
+            @include for-tablet-only {
+            }
+            @include phone {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+.clientele-wrapper {
+  section {
+    &.our-clients {
+      padding: 140px 0;
+      @include for-tablet-only {
+      }
+      @include phone {
+        padding: 64px 0;
+      }
+      .custom-heading-wrapper {
+        .section-heading {
+          font-family: neue-haas-display-bold;
+          font-size: 56px;
+          line-height: 120%;
+          &:before {
+            width: 86%;
+          }
+        }
+        h2 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+}

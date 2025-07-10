@@ -1,0 +1,13 @@
+// @import '../../assets/scss/main.scss';
+
+.retail-page {
+	.industry-page-wrapper {
+		section {
+			&.related-industries-posts {
+				.heading-wrapper {
+					width: 60%;
+				}
+			}
+		}
+	}
+}

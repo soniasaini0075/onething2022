@@ -1,0 +1,84 @@
+@import '../../assets/scss/main.scss';
+
+.cursor {
+    display: none;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #b9b9b9;
+    background: rgba(250, 250, 250, 0.6);
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    pointer-events: none;
+    z-index: 100;
+    transform: scale(1), translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    &.cursor-clicked {
+        transform-origin: center;
+    }
+}
+
+.cursor-follower {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) background;
+    user-select: none;
+    pointer-events: none;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    border: 1.5rem solid rgba(#fff, 1);
+    border-radius: 50%;
+    filter: blur(115px);
+
+    .transition_css {
+        transition: 1s;
+        &.ellipse_1 {
+            background: rgba(241, 21, 20, 0.3);
+            height: 258px;
+            width: 258px;
+            border-radius: 50%;
+            position: absolute;
+            right: -15px;
+            top: 0;
+        }
+        &.ellipse_2 {
+            background: #5454fd;
+            height: 126px;
+            width: 126px;
+            border-radius: 50%;
+            top: -10%;
+            position: relative;
+        }
+        &.ellipse_3 {
+            background: #af157b;
+            height: 177px;
+            width: 177px;
+            border-radius: 50%;
+            position: absolute;
+            top: 109%;
+            left: -54px;
+        }
+    }
+    @include phone {
+        width: 256px;
+        height: 256px;
+        opacity: 0.6;
+    }
+    // .blur_overlay {
+    //     background: rgb(255 255 255 / 50%);
+    //     z-index: 0;
+    // }
+}

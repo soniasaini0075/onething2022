@@ -1,0 +1,59 @@
+@import '../../assets/scss/breakpoints';
+
+.error-page {
+	.demo--strip {
+		display: none;
+	}
+}
+
+.page-not-found-wrapper {
+	section {
+		&.page-heading-404 {
+			.heading-wrapper {
+				padding: 132px 0 170px 0;
+				@include phone {
+					padding: 56px 0 88px 0;
+				}
+				figure {
+					margin: 0 auto;
+					text-align: center;
+					.error-image {
+						margin-bottom: 32px;
+						height: 282px;
+						width: 100%;
+						@include for-tablet-only {
+							width: 80%;
+						}
+						@include phone {
+							height: auto;
+							margin-bottom: 24px;
+						}
+					}
+					figcaption {
+						h5 {
+							width: 64%;
+							margin: 0 auto;
+							font-family: 'neue-haas-display-roman';
+							font-weight: 400;
+							margin-bottom: 24px;
+							color: var(--black-8);
+							@include phone {
+								width: 100%;
+								font-weight: 300;
+								margin-bottom: 16px;
+								font-size: 14px;
+								line-height: 24px;
+							}
+						}
+						.bttn-primary {
+							margin: 0 auto;
+							@include phone {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

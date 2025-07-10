@@ -1,0 +1,262 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "neue-haas-display-bold";
+  color: $zest-black;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 96px;
+  text-transform: capitalize;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  @include phone {
+    font-size: 56px;
+    line-height: 120%;
+  }
+  &.newh1 {
+    font-family: "neue-haas-display-bold";
+    font-size: 64px;
+    line-height: 120%;
+    color: $zest-black;
+    text-transform: initial;
+    @include for-tablet-only {}
+    @include phone {
+      font-size: 56px;
+    }
+  }
+}
+
+h2 {
+  font-size: 72px;
+  text-transform: capitalize;
+  line-height: 120%;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  @include phone {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  &.newh2 {
+    font-family: "neue-haas-display-bold";
+    font-size: 56px;
+    line-height: 120%;
+    color: $zest-black;
+    text-transform: initial;
+    @include for-tablet-only {}
+    @include phone {
+      font-size: 40px;
+    }
+  }
+}
+
+h3 {
+  font-size: 56px;
+  line-height: 120%;
+  font-weight: 700;
+  @include phone {
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+  &.newh3 {
+    font-size: 56px !important;
+  }
+  &.newh3-li {
+    font-family: "neue-haas-display-medium";
+    font-weight: 500;
+    line-height: 160%;
+    font-size: 16px;
+    color: $zest-black;
+  }
+  &.newh3-li-sm {
+    font-family: "neue-haas-display-medium";
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+    color: $zest-black;
+  }
+}
+
+h4 {
+  font-size: 40px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: "neue-haas-display-medium";
+  @include phone {
+    font-size: 32px;
+  }
+  &.newh4 {
+    font-family: "neue-haas-display-medium";
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 600;
+    color: $zest-black;
+  }
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  &.var-light {
+    font-family: "neue-haas-display-roman";
+    font-weight: 400;
+  }
+  &.var-bold {
+    font-family: "neue-haas-display-bold";
+    font-weight: 700;
+  }
+  @include phone {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  font-family: "neue-haas-display-roman";
+  &.var-light {
+    font-weight: 200;
+    font-family: "neue-haas-display-light";
+  }
+  &.var-medium {
+    font-family: "neue-haas-display-medium";
+    font-weight: 600;
+  }
+  &.var-bold {
+    font-family: "neue-haas-display-bold";
+    font-weight: 700;
+  }
+  @include phone {
+    font-size: 20px;
+  }
+}
+
+.home-heading {
+  font-size: 64px !important;
+  line-height: 120%;
+  @include phone {
+    font-size: 40px !important;
+  }
+
+}
+
+p {
+  color: $zest-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: "worksans-regular", sans-serif;
+  &.fs-20 {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 400;
+    @include for-tablet-only {
+    }
+    @include phone {
+      font-size: 16px;
+    }
+  }
+  &.fs-24 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    @include for-tablet-only {
+    }
+    @include phone {
+      font-size: 16px;
+    }
+  }
+  &.has-border {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      background: $border-gradient;
+      width: 4px;
+      display: inline-block;
+      height: 100%;
+      min-height: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+}
+
+.caption {
+  color: $zest-black;
+  font-family: "worksans-regular", sans-serif;
+  font-size: 18px;
+  line-height: 165%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @include phone {
+    font-size: 12px;
+    line-height: 160%;
+  }
+  &.small {
+    font-size: 16px;
+    line-height: 160%;
+    @include phone {
+      line-height: 120%;
+    }
+  }
+}
+
+.blockquotes {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 160%;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: -0.005em;
+  @include phone {
+    font-size: 18px;
+  }
+}
+
+.section-heading {
+  position: relative;
+  padding-top: 40px;
+  display: inline-block;
+  @include phone {
+    padding-top: 24px;
+  }
+  &:before {
+    content: "";
+    background-color: $zest-black;
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &.inverse {
+    &:before {
+      background-color: $zest-white;
+    }
+  }
+}
+
+.gradient-text {
+  background: $dark_pink_gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

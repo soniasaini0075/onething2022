@@ -1,0 +1,98 @@
+@import "../../assets/scss/breakpoints";
+
+.clientele-wrapper {
+  section {
+    &.our-clients {
+      padding: 80px 0;
+      position: relative;
+      z-index: 9;
+      @include phone {
+        padding: 48px 0;
+      }
+      .custom-heading-wrapper {
+        width: 60%;
+        @include for-tablet-only {
+        }
+        @include phone {
+          width: 100%;
+        }
+      }
+      .client-heading-section{
+        .client-main-head{
+          color: #0f0e0e;
+    font-family: 'neue-haas-display-bold';
+    font-size: 72px;
+    line-height: 100%;
+    margin-bottom: 32px;
+    font-weight: 700;
+    margin-top: 0;
+        }
+        .client-subhead{
+          color: #0f0e0e;
+    font-family: 'worksans-regular','sans-serif';
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 180%;
+    margin-bottom: 56px;
+    text-transform: none;
+    position: relative;
+    margin-top: 0;
+        }
+      }
+      .section-heading {
+        margin-bottom: 56px;
+        @include phone {
+          margin-bottom: 48px;
+          &:before {
+            width: 80%;
+          }
+        }
+        @include for-tablet-only {
+          margin-bottom: 16px;
+        }
+      }
+      .clients-logo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-start;
+        border: 1px solid var(--white);
+        border-left: 0;
+        border-bottom: 0;
+        @include phone {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .client_ {
+          border-left: 1px solid var(--white);
+          border-bottom: 1px solid var(--white);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          min-height: 180px;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          margin: 0 -2px -2px 0;
+          @include phone {
+            min-height: 80px;
+            margin: 0;
+          }
+          figure {
+            img {
+              width: 100%;
+            }
+          }
+          &.custom-border {
+          }
+          &:last-of-type {
+            @include for-tablet-only {
+            }
+            @include phone {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

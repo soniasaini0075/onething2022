@@ -1,0 +1,99 @@
+@import '../../assets/scss/breakpoints';
+
+.newsletter-wrapper {
+	.success-msg {
+		color: green;
+		position: absolute;
+		bottom: 45px;
+	}
+	.error-msg {
+		color: var(--red);
+		padding: 8px 0 0 0;
+		display: block;
+		&.mail-error {
+			color: var(--red);
+		}
+	}
+	section {
+		&.newsletter-main {
+			background-color: var(--ashwhite);
+			background: url('../../assets/img/global/work-with-us-bg.svg');
+			background-position: top center;
+			background-size: cover;
+			padding: 140px 0 165px;
+			@include for-tablet-only {
+				padding: 80px 0 80px;
+			}
+			@include phone {
+				padding: 56px 0 48px;
+			}
+			.content-grid {
+				.content {
+					max-width: 654px;
+					@include for-tablet-only {
+						max-width: 78%;
+					}
+					@include phone {
+						max-width: 100%;
+					}
+					h3 {
+						width: 100%;
+						padding-bottom: 56px;
+						text-transform: initial;
+						&:before {
+							display: none;
+						}
+					}
+					.newsletter-form {
+						width: 80%;
+						@include for-tablet-only {}
+						@include phone {
+							width: 90%;
+						}
+						form {
+							input {
+								margin-bottom: 0;
+								font-size: 24px;
+								line-height: 180%;
+								letter-spacing: -0.01em;
+								&:focus {
+									background-color: transparent;
+								}
+							}
+							button {
+								margin-top: 32px;
+								border: 0;
+								padding: 0;
+								background-color: transparent;
+							}
+						}
+						.form-group{
+							.input-wrapper{
+								.form-control{
+									border-bottom: 1px solid #000;
+									color: #000;
+								}
+							}
+						}
+					}
+				}
+				.visual-glance {
+					.grad {
+						&.gr-box1 {
+							position: absolute;
+							right: 16%;
+							transform: translate(-16.4%, -50%);
+							top: 70%;
+						}
+
+						&.gr-box2 {
+							position: absolute;
+							right: 0;
+							top: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
