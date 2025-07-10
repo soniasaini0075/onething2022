@@ -60,7 +60,7 @@ const Industries = () => {
     <section className="related-industries-posts blur-overlay">
           <div className="container">
             {/* <div className="heading-wrapper">
-              <h3 class="section-heading">{Data?.component_heading}</h3>
+              <h3 className="section-heading">{Data?.component_heading}</h3>
             </div> */}
             <div className="post-listing">
               {/* {

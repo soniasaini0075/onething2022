@@ -95,16 +95,16 @@ return (
                 existing standards and also empower users.
               </p>
               <div className="stats-container">
-                <h3 class="section-heading">Look at what data says</h3>
-                <div class="stats-flex colm-1">
-                  <div class="stat-div">
+                <h3 className="section-heading">Look at what data says</h3>
+                <div className="stats-flex colm-1">
+                  <div className="stat-div">
                     <h5>$660B</h5>
                     <p>
                       is the projected revenue for the digital health market by
                       2025
                     </p>
                   </div>
-                  <div class="stat-div">
+                  <div className="stat-div">
                     <h5>62%</h5>
                     <p>
                       of practitioners in the United States were unable to
@@ -113,15 +113,15 @@ return (
                     </p>
                   </div>
                 </div>
-                <div class="stats-flex colm-2">
-                  <div class="stat-div">
+                <div className="stats-flex colm-2">
+                  <div className="stat-div">
                     <h5>32%</h5>
                     <p>
                       improved cost efficiency can be achieved if healthcare
                       players invest in digital transformation
                     </p>
                   </div>
-                  <div class="stat-div">
+                  <div className="stat-div">
                     <h5>92%</h5>
                     <p>
                       increase projected in consumer(patient) satisfaction &
@@ -137,7 +137,7 @@ return (
       <section className="related-industries-posts blur-overlay">
         <div className="container">
           <div className="heading-wrapper">
-            <h3 class="section-heading">
+            <h3 className="section-heading">
               Building products for sustainable well-being
             </h3>
           </div>
@@ -430,7 +430,7 @@ return (
     <div className="container">
     <h3 className="section-heading">Other Industries</h3>
     <div className="other-industries-listing">
-    <ul class="related-industries-list">
+    <ul className="related-industries-list">
     <li>
     <a href="/bfsi">
     <h5>BFSI</h5>

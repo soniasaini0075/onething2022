@@ -568,7 +568,7 @@ const About = () => {
                         </Scene>
                       </Controller>
                     </figure>
-                    <p class="has-border">
+                    <p className="has-border">
                       Every year, our entire team comes together for an
                       off-site, to experience togetherness even in a hybrid
                       setup.{" "}
@@ -610,7 +610,7 @@ const About = () => {
                         </Scene>
                       </Controller>
                     </figure>
-                    <p class="has-border">
+                    <p className="has-border">
                       Culture and diversity remain an intrinsic part of
                       Onething, it reflects in the way we celebrate!{" "}
                     </p>
@@ -651,7 +651,7 @@ const About = () => {
                         </Scene>
                       </Controller>
                     </figure>
-                    <p class="has-border">
+                    <p className="has-border">
                       Our immense adoration and love for all beings, comes from
                       our culture of giving back.{" "}
                     </p>
@@ -696,7 +696,7 @@ const About = () => {
                         </Scene>
                       </Controller>
                     </figure>
-                    <p class="has-border">
+                    <p className="has-border">
                       Our culture defines us and results in exemplary work. Last
                       month, we took an Offsite to Ranthambore.
                     </p>
@@ -737,7 +737,7 @@ const About = () => {
                         </Scene>
                       </Controller>
                     </figure>
-                    <p class="has-border">
+                    <p className="has-border">
                       Our culture defines us and results in exemplary work. Last
                       month, we took an Offsite to Ranthambore.
                     </p>
@@ -779,8 +779,7 @@ const About = () => {
                               <small className="caption">Co-founder</small>
                             </h5>
                             <p>
-                              "All our dreams can come true, if we have the
-                              courage to pursue them."
+                              "All our dreams can come true, if we have the courage to pursue them."
                             </p>
                           </figcaption>
                         </figure>
@@ -801,8 +800,7 @@ const About = () => {
                               </small>
                             </h5>
                             <p>
-                              "Have no fear of perfection - you'll never reach
-                              it."
+                              "Have no fear of perfection - you'll never reachit."
                             </p>
                           </figcaption>
                         </figure>
@@ -821,8 +819,7 @@ const About = () => {
                               <small className="caption">UI LEAD</small>
                             </h5>
                             <p>
-                              "For us, empathy is the building block of any
-                              design project."
+                              "For us, empathy is the building block of any design project."
                             </p>
                           </figcaption>
                         </figure>
@@ -858,8 +855,7 @@ const About = () => {
                               <small className="caption">PROJECT MANAGER</small>
                             </h5>
                             <p>
-                              "No project is successful if the team is not
-                              strongly held by the pillar of unity."
+                              "No project is successful if the team is not strongly held by the pillar of unity."
                             </p>
                           </figcaption>
                         </figure>
@@ -878,13 +874,8 @@ const About = () => {
                               <small className="caption">GRAPHICS LEAD</small>
                             </h5>
                             <p>
-                              "I believe all designers have to have a little
-                              crazy streak, if the goal is to build something
-                              great."
-                            </p>
-                          </figcaption>
-                        </figure>
-                      </div>
+                              "I believe all designers have to have a little crazy streak, if the goal is to build something
+                              great."</p> </figcaption></figure></div>
                       {/* <div className="teams_card">
                         <figure>
                           <img
@@ -899,8 +890,7 @@ const About = () => {
                               <small className="caption">Co-founder</small>
                             </h5>
                             <p>
-                              "All our dreams can come true, if we have the
-                              courage to pursue them."
+                              "All our dreams can come true, if we have the courage to pursue them."
                             </p>
                           </figcaption>
                         </figure>
@@ -922,8 +912,8 @@ const About = () => {
             </div>
           </section>
           <section className="our_work left_container right_container blur-overlay">
-            <div class="div-wrap">
-              <figure class="our-work-banner">
+            <div className="div-wrap">
+              <figure className="our-work-banner">
                 <Controller>
                   <Scene
                     indicators={false}
@@ -1025,16 +1015,15 @@ const About = () => {
                           target="_blank" rel="noreferrer"
                         >
                           <svg
-                            class="linkedin svg-icon"
+                            className="linkedin svg-icon"
                             width="48"
                             height="48"
                             viewBox="0 0 48 48"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                            <path fill-rule="evenodd"
+                              clipRule="evenodd"
                               d="M10.1055 12.4272C10.1055 11.8114 10.3501 11.2209 10.7855 10.7855C11.2209 10.3501 11.8114 10.1055 12.4272 10.1055H35.5707C35.8759 10.105 36.1781 10.1647 36.4602 10.2811C36.7422 10.3976 36.9985 10.5686 37.2144 10.7842C37.4303 10.9999 37.6015 11.256 37.7183 11.5379C37.8351 11.8198 37.8951 12.122 37.8949 12.4272V35.5707C37.8953 35.8759 37.8354 36.1782 37.7188 36.4603C37.6022 36.7423 37.4311 36.9986 37.2154 37.2145C36.9996 37.4304 36.7434 37.6016 36.4614 37.7183C36.1794 37.8351 35.8772 37.8951 35.572 37.8949H12.4272C12.1222 37.8949 11.8202 37.8349 11.5384 37.7181C11.2566 37.6013 11.0006 37.4302 10.785 37.2145C10.5694 36.9988 10.3984 36.7427 10.2818 36.4609C10.1652 36.179 10.1053 35.877 10.1055 35.572V12.4272ZM21.105 20.7008H24.868V22.5905C25.4112 21.5042 26.8006 20.5265 28.8886 20.5265C32.8916 20.5265 33.8402 22.6903 33.8402 26.6604V34.0145H29.7893V27.5648C29.7893 25.3038 29.2461 24.028 27.8667 24.028C25.953 24.028 25.1573 25.4036 25.1573 27.5648V34.0145H21.105V20.7008ZM14.1577 33.8415H18.2099V20.5265H14.1577V33.8402V33.8415ZM18.7897 16.1838C18.7973 16.5307 18.7356 16.8757 18.6081 17.1985C18.4806 17.5213 18.2899 17.8153 18.0472 18.0634C17.8046 18.3115 17.5148 18.5086 17.1949 18.6432C16.875 18.7777 16.5315 18.8471 16.1844 18.8471C15.8374 18.8471 15.4938 18.7777 15.1739 18.6432C14.8541 18.5086 14.5643 18.3115 14.3216 18.0634C14.0789 17.8153 13.8882 17.5213 13.7607 17.1985C13.6333 16.8757 13.5715 16.5307 13.5792 16.1838C13.5942 15.5028 13.8752 14.8547 14.3622 14.3783C14.8491 13.902 15.5032 13.6353 16.1844 13.6353C16.8656 13.6353 17.5197 13.902 18.0067 14.3783C18.4936 14.8547 18.7747 15.5028 18.7897 16.1838V16.1838Z"
                               fill="url(#paint0_linear_1701_4217)"
                             />
@@ -1047,9 +1036,9 @@ const About = () => {
                                 y2="24.0002"
                                 gradientUnits="userSpaceOnUse"
                               >
-                                <stop stop-color="#EF8081" />
-                                <stop offset="0.619792" stop-color="#F63132" />
-                                <stop offset="1" stop-color="#9F1689" />
+                                <stop stopColor="#EF8081" />
+                                <stop offset="0.619792" stopColor="#F63132" />
+                                <stop offset="1" stopColor="#9F1689" />
                               </linearGradient>
                             </defs>
                           </svg>
@@ -1080,9 +1069,9 @@ const About = () => {
                                 y2="23.9995"
                                 gradientUnits="userSpaceOnUse"
                               >
-                                <stop stop-color="#EF8081" />
-                                <stop offset="0.619792" stop-color="#F63132" />
-                                <stop offset="1" stop-color="#9F1689" />
+                                <stop stopColor="#EF8081" />
+                                <stop offset="0.619792" stopColor="#F63132" />
+                                <stop offset="1" stopColor="#9F1689" />
                               </linearGradient>
                             </defs>
                           </svg>
@@ -1094,7 +1083,7 @@ const About = () => {
                           target="_blank" rel="noreferrer"
                         >
                           <svg
-                            class="spotify svg-icon"
+                            className="spotify svg-icon"
                             width="48"
                             height="48"
                             viewBox="0 0 48 48"
@@ -1114,9 +1103,9 @@ const About = () => {
                                 y2="23.9996"
                                 gradientUnits="userSpaceOnUse"
                               >
-                                <stop stop-color="#EF8081" />
-                                <stop offset="0.619792" stop-color="#F63132" />
-                                <stop offset="1" stop-color="#9F1689" />
+                                <stop stopColor="#EF8081" />
+                                <stop offset="0.619792" stopColor="#F63132" />
+                                <stop offset="1" stopColor="#9F1689" />
                               </linearGradient>
                             </defs>
                           </svg>
@@ -1147,7 +1136,7 @@ const About = () => {
                           target="_blank" rel="noreferrer"
                         >
                           <svg
-                            class="dribble svg-icon"
+                            className="dribble svg-icon"
                             width="48"
                             height="48"
                             viewBox="0 0 48 48"
@@ -1167,9 +1156,9 @@ const About = () => {
                                 y2="24"
                                 gradientUnits="userSpaceOnUse"
                               >
-                                <stop stop-color="#EF8081" />
-                                <stop offset="0.619792" stop-color="#F63132" />
-                                <stop offset="1" stop-color="#9F1689" />
+                                <stop stopColor="#EF8081" />
+                                <stop offset="0.619792" stopColor="#F63132" />
+                                <stop offset="1" stopColor="#9F1689" />
                               </linearGradient>
                             </defs>
                           </svg>
@@ -1203,7 +1192,6 @@ var teamSettings = {
       settings: {
         slidesToShow: 1.2,
         slidesToScroll: 1,
-        initialSlide: 1,
         initialSlide: 2,
       },
     },

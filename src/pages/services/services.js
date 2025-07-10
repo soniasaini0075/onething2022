@@ -1687,25 +1687,25 @@ View Projects
         <br /> across new technologies
       </h2>
     </div>
-    <div class="grid-container">
-      <div class="parent">
-        <div class="flex">
+    <div className="grid-container">
+      <div className="parent">
+        <div className="flex">
           <span className="numbers">01</span>
           <h4 className="newh4">AR/VR</h4>
         </div>
-        <div class="flex">
+        <div className="flex">
           <span className="numbers">02</span>
           <h4 className="newh4">Web 3.0</h4>
         </div>
-        <div class="flex">
+        <div className="flex">
           <span className="numbers">03</span>
           <h4 className="newh4">IoT</h4>
         </div>
-        <div class="flex">
+        <div className="flex">
           <span className="numbers">04</span>
           <h4 className="newh4">Blockchain</h4>
         </div>
-        <div class="flex">
+        <div className="flex">
           <span className="numbers">05</span>
           <h4 className="newh4">NFT</h4>
         </div>
@@ -1842,7 +1842,7 @@ style={{ display: "none" }}
         <span></span>
         <span></span>
       </button>
-      <div class="brief">
+      <div className="brief">
         <p className="fs-18">
           For us, every project begins with a discovery phase,
           where we define the scope and vision of the project
@@ -1872,7 +1872,7 @@ style={{ display: "none" }}
   <span></span>
   <span></span>
 </button>
-<div class="brief">
+<div className="brief">
   <p className="fs-18">
     After gathering all the valuable insights, we
     establish a clear idea of the problem the product is
@@ -1902,7 +1902,7 @@ style={{ display: "none" }}
   <span></span>
   <span></span>
 </button>
-<div class="brief">
+<div className="brief">
   <p className="fs-18">
     We use all the information gathered until this stage
     to get started with a design roadmap that meets the
@@ -1931,7 +1931,7 @@ style={{ display: "none" }}
   <span></span>
   <span></span>
 </button>
-<div class="brief">
+<div className="brief">
   <p className="fs-18">
     Finally, the designs are handed to the
     frontend-development team, who masterfully translate
@@ -2037,7 +2037,7 @@ style={{ display: "none" }}
 <ServicesProjects />
 
 <section>
-  <div class="homefaq--main">
+  <div className="homefaq--main">
     <div className="faq-page-wrapper page-wrapper">
       <section
       className="page-heading blur-overlay"

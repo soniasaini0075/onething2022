@@ -386,9 +386,9 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
                         </div>
                         {podcast.acf.video_podcast.rendered != "" && (
                           <div className="podcast-video-wrapper">
-                            <div class="wrapper">
-                              <div class="video-grid">
-                                <div class="frames">
+                            <div className="wrapper">
+                              <div className="video-grid">
+                                <div className="frames">
                                   {podcast.acf.video_podcast.rendered !==
                                     "" && (
                                     <iframe

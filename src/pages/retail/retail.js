@@ -156,16 +156,16 @@ const Retail = () => {
                   the aim is to invoke more purchases.
                 </p>
                 <div className="stats-container">
-                  <h3 class="section-heading">Look at what data says</h3>
-                  <div class="stats-flex colm-1">
-                    <div class="stat-div">
+                  <h3 className="section-heading">Look at what data says</h3>
+                  <div className="stats-flex colm-1">
+                    <div className="stat-div">
                       <h5>88%</h5>
                       <p>
                         of online shoppers are less likely to return to a site
                         after a bad customer experience
                       </p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>23%</h5>
                       <p>
                         of online shoppers will share a positive shopping
@@ -173,15 +173,15 @@ const Retail = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="stats-flex colm-2">
-                    <div class="stat-div">
+                  <div className="stats-flex colm-2">
+                    <div className="stat-div">
                       <h5>46%</h5>
                       <p>
                         of people say they would not purchase from a brand again
                         if they had an interruptive mobile experience
                       </p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>60%</h5>
                       <p>
                         of online shoppers use only mobile devices to make
@@ -197,7 +197,7 @@ const Retail = () => {
         <section className="related-industries-posts blur-overlay">
           <div className="container">
             <div className="heading-wrapper">
-              <h3 class="section-heading">
+              <h3 className="section-heading">
                 Top retail platforms, transformed with design
               </h3>
             </div>
@@ -529,7 +529,7 @@ const Retail = () => {
           <div className="container">
             <h3 className="section-heading">Other Industries</h3>
             <div className="other-industries-listing">
-              <ul class="related-industries-list">
+              <ul className="related-industries-list">
                 <li>
                   <a href="/bfsi">
                     <h5>BFSI</h5>

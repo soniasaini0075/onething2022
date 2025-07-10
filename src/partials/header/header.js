@@ -165,7 +165,7 @@ onClick={handleMenu}
   </button>
   // !isMenuActive ?
   // <img loading="lazy" className="humberger_btn" onClick={() => menuActiveHandle(true)} src={hamBurger} alt="humberger-icon" /> :
-  // <img loading="lazy" class="close_btn" onClick={closeMenu} src={closeBtn} alt="close-icon" />
+  // <img loading="lazy" className="close_btn" onClick={closeMenu} src={closeBtn} alt="close-icon" />
 }
 </li>
 </ul>

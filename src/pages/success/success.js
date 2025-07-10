@@ -79,7 +79,7 @@ const Success = () => {
          </section> */}
           <section className="message-container">
             <div className="container">
-              <div class="message__">
+              <div className="message__">
                 <div id="grad_one" className="grad type-2 small gr-box2"></div>
                 <h3 className="gradient-text">
                   {/* Thank you for reaching out. */}
@@ -108,10 +108,10 @@ const Success = () => {
             </div>
           </section>
           {/* <section className="contact-info-details">
-            <div class="container">
-               <div class="d-flex flex-column justify-content-end align-items-end contact-details">
+            <div className="container">
+               <div className="d-flex flex-column justify-content-end align-items-end contact-details">
                   <p className="fs-20">Prefer email?</p>
-                  <p className="fs-20"><a href="mailto:sayhello@onething.design" class="link_">sayhello@onething.design</a></p>
+                  <p className="fs-20"><a href="mailto:sayhello@onething.design" className="link_">sayhello@onething.design</a></p>
                </div>
             </div>
          </section> */}

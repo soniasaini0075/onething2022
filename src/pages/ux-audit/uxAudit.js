@@ -119,8 +119,8 @@ const Audit = () => {
         <div className="services-content">
           <div className="grad type-2 medium gr-box2"></div>
           <div className="services-content-sub left_container">
-            <div class="main-container">
-              <div class="left_container">
+            <div className="main-container">
+              <div className="left_container">
                 <h2 className="section-heading newh2">UX audit services</h2>
                 <div className="service-accordian">
                   <ul className="tags one">

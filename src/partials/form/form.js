@@ -195,7 +195,7 @@ const FormComp = ({ cursor, contactForm, sendContactForm,title }) => {
                   Your name
                 </span>
               )}
-            <fieldset class="form-group">
+            <fieldset className="form-group">
 
             <Form.Control
               ref={(n) => (nameControl = n)}
@@ -228,7 +228,7 @@ const FormComp = ({ cursor, contactForm, sendContactForm,title }) => {
                   Please enter a valid email id
                 </span>
               )}
-            <fieldset class="form-group">
+            <fieldset className="form-group">
 
             <Form.Control
               ref={(em) => (emailControl = em)}
@@ -266,7 +266,7 @@ const FormComp = ({ cursor, contactForm, sendContactForm,title }) => {
                   Mobile number must be 15 digits!
                 </span>
               )}
-                <fieldset class="form-group">
+                <fieldset className="form-group">
             <Form.Control
               className={
                 [
@@ -316,7 +316,7 @@ const FormComp = ({ cursor, contactForm, sendContactForm,title }) => {
             value={msg}
             onChange={(e) => setMsg(e.target.value)}
             /> */}
-                <fieldset class="form-group">
+                <fieldset className="form-group">
 
             <Form.Control
               className={
@@ -351,40 +351,40 @@ const FormComp = ({ cursor, contactForm, sendContactForm,title }) => {
             {/* This info helps our business team prepare better for the
             first call. */}
           </span> 
-          {/* <div class="main-select">
-<ul class="select">
+          {/* <div className="main-select">
+<ul className="select">
   <li>
-    <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
-    <span class="select_label select_label-placeholder">Awesomeness Level</span>
+    <input className="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
+    <span className="select_label select_label-placeholder">Awesomeness Level</span>
   </li>
 
-  <li class="select_items">
-    <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
-    <label class="select_closeLabel" for="awesomeness-close"></label>
+  <li className="select_items">
+    <input className="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
+    <label className="select_closeLabel" for="awesomeness-close"></label>
 
-    <ul class="select_options">
-      <li class="select_option">
-        <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
-        <label class="select_label" for="awesomeness-ridiculous">ridiculous</label>
+    <ul className="select_options">
+      <li className="select_option">
+        <input className="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
+        <label className="select_label" for="awesomeness-ridiculous">ridiculous</label>
       </li>
 
-      <li class="select_option">
-        <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
-        <label class="select_label" for="awesomeness-reasonable">reasonable</label>
+      <li className="select_option">
+        <input className="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
+        <label className="select_label" for="awesomeness-reasonable">reasonable</label>
       </li>
 
-      <li class="select_option">
-        <input class="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
-        <label class="select_label" for="awesomeness-lacking">lacking</label>
+      <li className="select_option">
+        <input className="select_input" type="radio" name="awesomeness" id="awesomeness-lacking"/>
+        <label className="select_label" for="awesomeness-lacking">lacking</label>
       </li>
 
-      <li class="select_option">
-        <input class="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
-        <label class="select_label" for="awesomeness-awesomeless">awesomeless</label>
+      <li className="select_option">
+        <input className="select_input" type="radio" name="awesomeness" id="awesomeness-awesomeless"/>
+        <label className="select_label" for="awesomeness-awesomeless">awesomeless</label>
       </li>
     </ul>
 
-    <label class="select_expandLabel" for="awesomeness-opener"></label>
+    <label className="select_expandLabel" for="awesomeness-opener"></label>
   </li>
 </ul>
 </div> */}

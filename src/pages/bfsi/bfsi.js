@@ -138,16 +138,16 @@ const Bfsi = () => {
                   friction balance to shield your users from financial blunders.
                 </p>
                 <div className="stats-container">
-                  <h3 class="section-heading">Look at what data says</h3>
-                  <div class="stats-flex colm-1">
-                    <div class="stat-div">
+                  <h3 className="section-heading">Look at what data says</h3>
+                  <div className="stats-flex colm-1">
+                    <div className="stat-div">
                       <h5>75%</h5>
                       <p>
                         of US’ population is drawn to fintech for a simple,
                         fast, and accessible experience
                       </p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>6</h5>
                       <p>
                         out of every 10 mobile users prefer finance apps over
@@ -155,15 +155,15 @@ const Bfsi = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="stats-flex colm-2">
-                    <div class="stat-div">
+                  <div className="stats-flex colm-2">
+                    <div className="stat-div">
                       <h5>71%</h5>
                       <p>
                         of banking users don’t receive time-targeted product
                         recommendations.
                       </p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>25%</h5>
                       <p>
                         of the fintech market is held by digital payment
@@ -179,7 +179,7 @@ const Bfsi = () => {
         <section className="related-industries-posts blur-overlay">
           <div className="container">
             <div className="heading-wrapper">
-              <h3 class="section-heading">
+              <h3 className="section-heading">
                 Unlocking impact for the leading ones
               </h3>
             </div>
@@ -543,7 +543,7 @@ const Bfsi = () => {
           <div className="container">
             <h3 className="section-heading">Other Industries</h3>
             <div className="other-industries-listing">
-              <ul class="related-industries-list">
+              <ul className="related-industries-list">
                 <li>
                   <a href="/education">
                     <h5>

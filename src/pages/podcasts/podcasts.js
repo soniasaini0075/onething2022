@@ -311,9 +311,9 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                             <div className="conversation_card">
                               <figure>
                                 <figcaption>
-                                  <h6 class="fs-20">
-                                    <span class="tags_">NEW RELEASE</span>
-                                    <small class="published-date">
+                                  <h6 className="fs-20">
+                                    <span className="tags_">NEW RELEASE</span>
+                                    <small className="published-date">
                                       {podcast.published_date}
                                     </small>
                                   </h6>
@@ -323,7 +323,7 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                                         __html: podcast.title.rendered,
                                       }}
                                     ></span>
-                                    <small class="designation">
+                                    <small className="designation">
                                       {podcast.acf.special_guest} with{" "}
                                       {podcast.acf.hosted_by}
                                     </small>
@@ -421,9 +421,9 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                       <a href="/podcast/3-mistakes-we-made-from-the-entrepreneurs-guidebook/">
                         <figure>
                           <figcaption>
-                            <h6 class="fs-20">
+                            <h6 className="fs-20">
                               Manik Arora
-                              <small class="designation">
+                              <small className="designation">
                                 Co-Founder &amp; Design Director
                               </small>
                             </h6>
@@ -442,7 +442,7 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                               make mistakes, let them fall, because we're there
                               for them.
                             </h5>
-                            <a class="bttn bttn-secondary">
+                            <a className="bttn bttn-secondary">
                               <img
                                 loading="lazy"
                                 src={podcastPlayWhite}
@@ -467,9 +467,9 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                       <a href="/podcast/global-design-deep-dive-exploring-modern-design-with-lollypop/">
                         <figure>
                           <figcaption>
-                            <h6 class="fs-20">
+                            <h6 className="fs-20">
                               Anil Reddy
-                              <small class="designation">
+                              <small className="designation">
                                 Founder &amp; Global Design Director | Lollypop
                                 Design Studio
                               </small>
@@ -488,7 +488,7 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                               It feels like India has become a design
                               destination now.
                             </h5>
-                            <a class="bttn bttn-secondary">
+                            <a className="bttn bttn-secondary">
                               <img
                                 loading="lazy"
                                 src={podcastPlayWhite}
@@ -513,9 +513,9 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                       <a href="/podcast/exploring-clarity-chaos-in-a-creative-agency/">
                         <figure>
                           <figcaption>
-                            <h6 class="fs-20">
+                            <h6 className="fs-20">
                               Kunel and Sayantan
-                              <small class="designation">
+                              <small className="designation">
                                 Founder and Senior Partner | Animal
                               </small>
                             </h6>
@@ -533,7 +533,7 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                               kind of work that we want. It's almost like a
                               circular flow of things.
                             </h5>
-                            <a class="bttn bttn-secondary">
+                            <a className="bttn bttn-secondary">
                               <img
                                 loading="lazy"
                                 src={podcastPlayWhite}
@@ -654,24 +654,24 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                                 alt=""
                               />
                               <figcaption>
-                                <p class="episode-number tags_">
+                                <p className="episode-number tags_">
                                   {podcast.acf.episode_number}
                                 </p>
-                                <p class="published-date">
+                                <p className="published-date">
                                   {podcast.published_date}
                                 </p>
-                                <h5 class="title-podcast">
+                                <h5 className="title-podcast">
                                   <span
                                     dangerouslySetInnerHTML={{
                                       __html: podcast.title.rendered,
                                     }}
                                   ></span>
                                 </h5>
-                                <p class="author-name">
+                                <p className="author-name">
                                   {podcast.acf.special_guest} with{" "}
                                   {podcast.acf.hosted_by}
                                 </p>
-                                <a class="bttn bttn-secondary">
+                                <a className="bttn bttn-secondary">
                                   <img
                                     loading="lazy"
                                     src={podcastPlay}
@@ -688,10 +688,10 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                     })}
                   </div>
                   {podcastList.length < totalPodcastCount && (
-                    <div class="pagination-wrap">
+                    <div className="pagination-wrap">
                       {!loading && (
                         <button
-                          class="bttn bttn-secondary"
+                          className="bttn bttn-secondary"
                           type="button"
                           onClick={handleFetchBlogs}
                         >
@@ -705,7 +705,7 @@ const Podcasts = ({ podcastState, fetchPodcasts }) => {
                         </button>
                       )}
                       {loading && (
-                        <button class="bttn bttn-secondary" disabled>
+                        <button className="bttn bttn-secondary" disabled>
                           <span>Loading...</span>
                         </button>
                       )}

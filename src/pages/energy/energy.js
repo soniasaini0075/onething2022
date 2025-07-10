@@ -120,21 +120,21 @@
 //               <div className="content left_container">
 //                 <p className="intro-text">The energy industry grapples with efficiency challenges spanning over various stages - production, storage, transmission and distribution. Recognising the critical role that digital transformation plays here, we extend our expertise across a diverse spectrum of services, from smart grid technology to battery management, mobility solutions, etc. By harnessing the power of strategic design coupled with a mindful approach, we are committed to taking functional optimization to its peak.</p>
 //                 <div className="stats-container">
-//                   <h3 class="section-heading">How do we optimize energy<br/> platforms to reduce efficiency losses?</h3>
-//                   <div class="stats-flex colm-1">
-//                     <div class="stat-div">
+//                   <h3 className="section-heading">How do we optimize energy<br/> platforms to reduce efficiency losses?</h3>
+//                   <div className="stats-flex colm-1">
+//                     <div className="stat-div">
 //                       <p>Crafting intuitive and easy to understand systems to improve efficiency</p>
 //                     </div>
-//                     <div class="stat-div">
+//                     <div className="stat-div">
 //                       <p>Making systems modular and scalable to remove added costs</p>
 //                     </div>
 //                   </div>
-//                   <div class="stats-flex colm-2">
-//                     <div class="stat-div">
+//                   <div className="stats-flex colm-2">
+//                     <div className="stat-div">
 //                       <h5></h5>
 //                       <p>Creating solutions that not only address immediate needs but also align with future's ever-evolving demands</p>
 //                     </div>
-//                     <div class="stat-div">
+//                     <div className="stat-div">
 //                       <h5></h5>
 //                       <p>Embracing AI driven automation to take the industry forward</p>
 //                     </div>
@@ -147,7 +147,7 @@
 //         <section className="related-industries-posts blur-overlay">
 //           <div className="container">
 //             <div className="heading-wrapper">
-//               <h3 class="section-heading">
+//               <h3 className="section-heading">
 //                 Simplifying energy management for
 //               </h3>
 //             </div>
@@ -454,7 +454,7 @@
 //           <div className="container">
 //             <h3 className="section-heading">Other Industries</h3>
 //             <div className="other-industries-listing">
-//               <ul class="related-industries-list">
+//               <ul className="related-industries-list">
 //                 <li>
 //                   <a href="/education">
 //                     <h5>

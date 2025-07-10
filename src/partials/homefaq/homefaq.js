@@ -11,7 +11,7 @@ import primaryCtaArrow from "../../assets/img/global/primary-arrow.svg";
 function HomeFaq() {
     return (
     <>
-    <div class="homefaq--main">
+    <div className="homefaq--main">
         <div className="faq-page-wrapper page-wrapper blur-overlay">
             <section className="page-heading blur-overlay">
               <div className="container">

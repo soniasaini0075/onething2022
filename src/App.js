@@ -1,5 +1,6 @@
 import { useEffect, useRef, Suspense,lazy} from "react";
 import { Outlet, Switch, BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react';
 
 // Libraries
 import Slider from "react-slick";
@@ -22,7 +23,6 @@ import PageLoader from "./partials/loaders/page-loader";
 // Partials
 import Header from "./partials/header/header";
 import Footer from "./partials/footer/footer";
-import Cursor from "./widgets/cursor/cursor";
 import LinesBehindLayout from "./partials/lines-behind-layout/LinesBehindLayout";
 import ScrollToTop from "./partials/scroll-to-top/scroll-to-top";
 import LocomotiveScroll from "locomotive-scroll";
@@ -134,7 +134,6 @@ const App = () => {
 
   return (
     <div ref={containerRef} data-scroll-container className="">
-      <Cursor />
       {/* onething2022 */}
       <BrowserRouter basename={"/"}>
         <ScrollToTop />
@@ -143,7 +142,7 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route
               index
-              element={<Home appRef={containerRef} cursor={cursor} />}
+              element={<Home appRef={containerRef}  />}
             />
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects />} />
@@ -151,7 +150,7 @@ const App = () => {
               path="projects/:catSlug/:caseStudy"
               element={<CaseStudy />}
             />
-            <Route path="contact" element={<Contact cursor={cursor} />} />
+            <Route path="contact" element={<Contact  />} />
             <Route path="faq" element={<Faq />} />
             <Route path="success" element={<Success />} />
             <Route path="careers" element={<Careers />} />

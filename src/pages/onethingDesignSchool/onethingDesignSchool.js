@@ -276,12 +276,12 @@ const OnethingDesignSchool = () => {
     </div>
   </section>
   <section className="become-mentor-wrapper blur-overlay">
-    <div class="container">
+    <div className="container">
       <div className="grad type-2 medium"></div>
       <div className="grad type-2 mesh-gradient large"></div>
-      <div class="div-wrap">
-        <div class="container">
-          <h2 class="newh2">Shape the careers of aspiring UX professionals</h2>
+      <div className="div-wrap">
+        <div className="container">
+          <h2 className="newh2">Shape the careers of aspiring UX professionals</h2>
           <div className="buttons-wrapper">
             <p className="gradient-text">write to us: 
             <a className="bttn bttn-secondary" href="mailto:sayhello@onething.design">
@@ -294,14 +294,14 @@ const OnethingDesignSchool = () => {
     </div>
   </section>
   <section className="partnerships-wrapper blur-overlay">
-    <div class="container">
-      <div class="div-wrap">
-        <div class="heading-wrapper">
-          <h2 class="section-heading newh2">Partnerships</h2>
+    <div className="container">
+      <div className="div-wrap">
+        <div className="heading-wrapper">
+          <h2 className="section-heading newh2">Partnerships</h2>
         </div>
-        <div class="partnerships-grid">
+        <div className="partnerships-grid">
           <a href="https://mastersunion.org/mastercamps/user-experience-design" target="_blank" rel="noreferrer">
-            <div class="partner-info">
+            <div className="partner-info">
               <h5>Masters’ Union</h5>
               <p>MasterCamp in User Experience Design offers a holistic curriculm including capstone with real clients, design hackathons, UX teardowns and much more.</p>
              <figure>
@@ -310,7 +310,7 @@ const OnethingDesignSchool = () => {
             </div>
           </a>
           <a href="https://learn.growthschool.io/user-experience-research" target="_blank" rel="noreferrer">
-              <div class="partner-info">
+              <div className="partner-info">
               <h5>Growth school</h5>
               <p>UX Research & Strategy Program is focussed at helping design professionals turn user insights into effective design strategies.</p>
              <figure>

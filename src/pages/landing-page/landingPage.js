@@ -272,10 +272,10 @@ return (
             </div>
          </div>
       </section>
-      <div class="sticky-mobile-button-wrapper">
-         <div class="get-in-touch-button">
+      <div className="sticky-mobile-button-wrapper">
+         <div className="get-in-touch-button">
             <a href="#landingForm" className="scroll-top-bttn">
-            <span class="gradient-text">Schedule A Call</span>
+            <span className="gradient-text">Schedule A Call</span>
             <img loading="lazy" src={primaryCtaArrow} className="bttn-icon" alt="" />
             </a>
          </div>

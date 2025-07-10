@@ -86,23 +86,23 @@ return (
                 <div className="content left_container">
                     <p className="intro-text">The main objective of Enterprise UX is centered around increasing efficiency and productivity for all user groups within an organization. Hence, our approach to enterprise UX is focussed at streamlining complex processes and creating intuitive interfaces, to minimize cognitive load & reduce distractions. Our commitment to creating goal-oriented experiences help employees to work seamlessly with B2B SaaS applications, <span>driving optimal performance</span> and business success.</p>
                     <div className="stats-container">
-                        <h3 class="section-heading">Look at what data says</h3>
-                        <div class="stats-flex colm-1">
-                            <div class="stat-div">
+                        <h3 className="section-heading">Look at what data says</h3>
+                        <div className="stats-flex colm-1">
+                            <div className="stat-div">
                                 <h5>50%</h5>
                                 <p>of companies using multiple SaaS applications will centralize management in the next five years</p>
                             </div>
-                            <div class="stat-div">
+                            <div className="stat-div">
                                 <h5>53%</h5>
                                 <p>of surveyed IT decision makers said ERP was an investment priority, in addition to CRM</p>
                             </div>
                         </div>
-                        <div class="stats-flex colm-2">
-                            <div class="stat-div">
+                        <div className="stats-flex colm-2">
+                            <div className="stat-div">
                                 <h5>38%</h5>
                                 <p>of companies say that they are running almost completely on SaaS</p>
                             </div>
-                            <div class="stat-div">
+                            <div className="stat-div">
                                 <h5>80%</h5>
                                 <p>of businesses plan to make all their systems SaaS by 2025</p>
                             </div>
@@ -115,7 +115,7 @@ return (
     <section className="related-industries-posts blur-overlay">
         <div className="container">
             <div className="heading-wrapper">
-                <h3 class="section-heading">Enhancing user-software interaction for</h3>
+                <h3 className="section-heading">Enhancing user-software interaction for</h3>
             </div>
             <div className="post-listing">
                 <div className="project-industry type--1">
@@ -332,7 +332,7 @@ return (
     <div className="container">
         <h3 className="section-heading">Other Industries</h3>
         <div className="other-industries-listing">
-            <ul class="related-industries-list">
+            <ul className="related-industries-list">
                 <li>
                     <a href="/education">
                         <h5>

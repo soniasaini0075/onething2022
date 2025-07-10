@@ -131,23 +131,23 @@ const AllIndustries = ({Data,title}) => {
                   {Data?.desc2}
                 </p>
                 <div className="stats-container">
-                  <h3 class="section-heading" dangerouslySetInnerHTML={{ __html: Data?.statsHead }} ></h3>
-                  <div class="stats-flex colm-1">
-                    <div class="stat-div">
+                  <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: Data?.statsHead }} ></h3>
+                  <div className="stats-flex colm-1">
+                    <div className="stat-div">
                       <h5>{Data?.stats1}</h5>
                       <p>{Data?.stats1_desc}</p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>{Data?.stats2}</h5>
                       <p>{Data?.stats2_desc}</p>
                     </div>
                   </div>
-                  <div class="stats-flex colm-2">
-                    <div class="stat-div">
+                  <div className="stats-flex colm-2">
+                    <div className="stat-div">
                       <h5>{Data?.stats3}</h5>
                       <p>{Data?.stats3_desc}</p>
                     </div>
-                    <div class="stat-div">
+                    <div className="stat-div">
                       <h5>{Data?.stats4}</h5>
                       <p>{Data?.stats4_desc}</p>
                     </div>
@@ -160,7 +160,7 @@ const AllIndustries = ({Data,title}) => {
         <section className="related-industries-posts blur-overlay">
           <div className="container">
             <div className="heading-wrapper">
-              <h3 class="section-heading">{Data?.component_heading}</h3>
+              <h3 className="section-heading">{Data?.component_heading}</h3>
             </div>
             <div className="post-listing">
               {/* {
