@@ -1,5 +1,5 @@
 import "./share-tools.scss";
-
+import React from 'react';
 const ShareTools = () => {
   return (
     <>

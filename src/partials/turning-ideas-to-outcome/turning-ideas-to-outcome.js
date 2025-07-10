@@ -1,7 +1,7 @@
 import React from "react";
 import primaryCtaArrow from "../../assets/img/global/primary-arrow.svg";
 import "./turning-ideas-to-outcome.scss"
-
+import React from 'react';
 
 const TurningIdeasToOutcome = () => {
   return (

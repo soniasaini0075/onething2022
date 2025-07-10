@@ -1,4 +1,5 @@
 import "./curated-projects-small.scss";
+import React from 'react';
 
 // import shareButton from "../../assets/img/global/share-white.webp";
 import whiteArrow from "../../assets/img/global/white-arrow.webp";

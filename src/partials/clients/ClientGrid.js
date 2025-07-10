@@ -1,5 +1,6 @@
 import "./clients.scss";
 
+import React from 'react';
 import Ziploan from "../../assets/img/clients/ziploan.svg";
 import Airtel from "../../assets/img/clients/airtel.svg";
 import Coke from "../../assets/img/clients/coke.svg";

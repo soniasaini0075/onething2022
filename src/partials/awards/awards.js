@@ -3,7 +3,7 @@ import "./awards.scss";
 import Slider from "react-slick";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-
+import React from 'react';
 import award1 from "../../assets/img/about/awards/award1.webp";
 import award2 from "../../assets/img/about/awards/award2.webp";
 import award3 from "../../assets/img/about/awards/award3.webp";

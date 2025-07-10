@@ -1,5 +1,5 @@
 import "./related-case-studies.scss";
-
+import React from 'react';
 import projectArrow from "../../assets/img/svg/right-arrow.svg";
 
 const RelatedCaseStudies = ({ relatedProjects }) => {

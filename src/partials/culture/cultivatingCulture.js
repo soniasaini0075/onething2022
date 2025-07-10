@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Slider from "react-slick";
-
+import React from 'react';
 import "./cultivating-culture.scss";
 
 import cultivatingCultureSmall1 from "../../assets/img/culture/1-small.webp";

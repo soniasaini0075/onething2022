@@ -1,6 +1,6 @@
 import "./page-loader.scss";
 import loader from "../../assets/img/loader_final.webm";
-
+import React from 'react';
 const PageLoader = () => {
   return (
     <>

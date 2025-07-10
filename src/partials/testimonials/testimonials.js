@@ -2,7 +2,7 @@ import "./testimonials.scss";
 
 import { useState } from "react";
 import Slider from "react-slick";
-
+import React from 'react';
 import testimonialsImageOne from "../../assets/img/global/testimonial-one.webp";
 import testimonialsImageTwo from "../../assets/img/global/testimonial-two.webp";
 import testimonialsImageThree from "../../assets/img/global/testimonial-three.webp";

@@ -1,5 +1,5 @@
 import "./lines-behind-layout.scss";
-
+import React from 'react';
 
 function LinesBehindLayout() {
     return (

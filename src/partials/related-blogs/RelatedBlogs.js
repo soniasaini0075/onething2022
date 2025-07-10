@@ -1,4 +1,5 @@
 import "./related-blogs.scss";
+import React from 'react';
 import { convertToWebPURL } from "../../utils/global_fun";
 // import primaryCtaArrow from "../../assets/img/global/primary-arrow.svg";
 // import ctaArrow from "../../assets/img/global/grad-arrow.svg";

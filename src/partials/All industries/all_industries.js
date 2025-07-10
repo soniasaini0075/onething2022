@@ -1,5 +1,5 @@
 import "./all_industries.scss";
-
+import React from 'react';
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import rightArrow from "../../assets/img/svg/right-arrow.svg";

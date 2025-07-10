@@ -1,7 +1,7 @@
 import "./curated-projects-large.scss";
 
 import Newsletter from "../newsletter/newsletter";
-
+import React from 'react';
 import whiteArrow from "../../assets/img/global/white-arrow.svg";
 import playIcon from "../../assets/img/global/play.svg";
 import playDarkIcon from "../../assets/img/podcast/play-dark.svg";

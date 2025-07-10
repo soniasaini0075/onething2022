@@ -1,5 +1,5 @@
 import "./newsletter.scss";
-
+import React from 'react';
 import { useState, useRef } from "react";
 
 import { connect } from "react-redux";
