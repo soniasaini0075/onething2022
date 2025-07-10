@@ -1,0 +1,7 @@
+module.exports = {
+  rules: {
+    "no-console": "off",
+    "eqeqeq": "warn",
+    // Add or relax other rules here
+  }
+}

@@ -310,7 +310,7 @@ const Careers = ({ jobsState, fetchJobs }) => {
                         <li>
                           <a
                             href="https://www.linkedin.com/company/onething-design/"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             <svg
                               className="linkedin svg-icon"
@@ -346,7 +346,7 @@ const Careers = ({ jobsState, fetchJobs }) => {
                         <li>
                           <a
                             href="https://www.instagram.com/onething.design/"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             <svg
                               width="24"
@@ -379,7 +379,7 @@ const Careers = ({ jobsState, fetchJobs }) => {
                         <li>
                           <a
                             href="https://open.spotify.com/show/1bFew0EsLhxbfPjswN8syn"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             <svg
                               className="spotify svg-icon"
@@ -413,7 +413,7 @@ const Careers = ({ jobsState, fetchJobs }) => {
                         <li>
                           <a
                             href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             <svg
                               width="24"
@@ -432,7 +432,7 @@ const Careers = ({ jobsState, fetchJobs }) => {
                         <li>
                           <a
                             href="https://dribbble.com/onething-design"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             <svg
                               className="dribble svg-icon"

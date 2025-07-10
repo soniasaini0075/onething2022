@@ -52,7 +52,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sitemap": "babel-node src/sitemap-generator.js"
+    "sitemap": "babel-node src/sitemap-generator.js",
+    "lint": "eslint src --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": [

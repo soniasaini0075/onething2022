@@ -648,7 +648,7 @@ const Blogs = ({ blogState, fetchBlogs }) => {
                             className="bttn bttn-secondary gradient-text"
                             href={whitepaper2File}
                             download="whitepaper2File.pdf"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                             rel="noopener noreferrer"
                           >
                             Download
@@ -676,7 +676,7 @@ const Blogs = ({ blogState, fetchBlogs }) => {
                             className="bttn bttn-secondary gradient-text"
                             href={whitepaper1File}
                             download="whitepaper1File.pdf"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                             rel="noopener noreferrer"
                           >
                             Download

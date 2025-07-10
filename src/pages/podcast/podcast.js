@@ -168,7 +168,7 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
                           <li>
                             <a
                               href="https://podcasts.apple.com/podcast/id1565301034"
-                              target="_blank"
+                              target="_blank" rel="noreferrer"
                             >
                               <figure>
                                 <img
@@ -188,7 +188,7 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
                           <li>
                             <a
                               href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xNzYxNDU5LnJzcw=="
-                              target="_blank"
+                              target="_blank" rel="noreferrer"
                             >
                               <figure>
                                 <img
@@ -208,7 +208,7 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
                           <li>
                             <a
                               href="https://open.spotify.com/show/1bFew0EsLhxbfPjswN8syn"
-                              target="_blank"
+                              target="_blank" rel="noreferrer"
                             >
                               <figure>
                                 <img
@@ -228,7 +228,7 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
                           <li>
                             <a
                               href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-                              target="_blank"
+                              target="_blank" rel="noreferrer"
                             >
                               <figure>
                                 <img
@@ -281,7 +281,7 @@ const Podcast = ({ podcastState, fetchPodcast }) => {
 
                         <a
                           href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                           className="watch-bttn"
                         >
                           <span>Now watch us on</span>

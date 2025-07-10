@@ -256,7 +256,7 @@ const Search = (props) => {
     return (
     <a
     href={"/blogs/" + blog?.slug + "/"}
-    target="_blank"
+    target="_blank" rel="noreferrer"
     className="qodef-m-navigation"
     data-cursor-img={readIcon}
     key={i}

@@ -1021,7 +1021,7 @@ const About = () => {
                       <li>
                         <a
                           href="https://www.linkedin.com/company/onething-design/"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <svg
                             class="linkedin svg-icon"
@@ -1057,7 +1057,7 @@ const About = () => {
                       <li>
                         <a
                           href="https://www.instagram.com/onething.design/"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <svg
                             width="48"
@@ -1090,7 +1090,7 @@ const About = () => {
                       <li>
                         <a
                           href="https://open.spotify.com/show/1bFew0EsLhxbfPjswN8syn"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <svg
                             class="spotify svg-icon"
@@ -1124,7 +1124,7 @@ const About = () => {
                       <li>
                         <a
                           href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <svg
                             width="48"
@@ -1143,7 +1143,7 @@ const About = () => {
                       <li>
                         <a
                           href="https://dribbble.com/onething-design"
-                          target="_blank"
+                          target="_blank" rel="noreferrer"
                         >
                           <svg
                             class="dribble svg-icon"

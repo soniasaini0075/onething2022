@@ -73,7 +73,7 @@ const Audit = () => {
             <h2 className="newh2 section-heading">
               Why UX Audit?
             </h2>
-            <p className="fs-20">We believe identification of gaps is the first step towards innovation. A <a className="gradient-text" href="https://www.onething.design/blogs/conducting-a-ux-audit-a-step-by-step-guide/" target="_blank">UX Audit</a> dissects the layers of user interactions, design components, and navigational flows to bring out – not only what’s not working, but what’s missing.</p>
+            <p className="fs-20">We believe identification of gaps is the first step towards innovation. A <a className="gradient-text" href="https://www.onething.design/blogs/conducting-a-ux-audit-a-step-by-step-guide/" target="_blank" rel="noreferrer">UX Audit</a> dissects the layers of user interactions, design components, and navigational flows to bring out – not only what’s not working, but what’s missing.</p>
           </div>
         </div>
       </div>

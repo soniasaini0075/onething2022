@@ -35,7 +35,6 @@ import lokalHomeThumbnail from "../../assets/img/home/lokal-home-thumbnail.webp"
 import cokeHomeThumbnail from "../../assets/img/home/orix-home-thumbnail.webp";
 import noiseHomeThumbnail from "../../assets/img/home/noise-home-thumbnail.webp";
 import closeIcon from "../../assets/img/global/close-text-bbtn.svg";
-import showReelVideo from "../../assets/img/videos/showreel.mp4";
 import LocomotiveScroll from "locomotive-scroll";
 
 import "./home.scss";

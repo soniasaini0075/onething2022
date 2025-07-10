@@ -8,7 +8,7 @@ const ShareTools = () => {
     <p className="fs-18">Share this Article:</p>
     <ul>
     <li>
-    <a href="#" target="_blank">
+    <a href="#" target="_blank" rel="noreferrer">
     <svg
     width="40"
     height="40"
@@ -25,7 +25,7 @@ const ShareTools = () => {
     </a>
     </li>
     <li>
-    <a href="#" target="_blank">
+    <a href="#" target="_blank" rel="noreferrer">
     <svg
     width="40"
     height="40"
@@ -42,7 +42,7 @@ const ShareTools = () => {
     </a>
     </li>
     <li>
-    <a href="#" target="_blank">
+    <a href="#" target="_blank" rel="noreferrer">
     <svg
     width="40"
     height="40"

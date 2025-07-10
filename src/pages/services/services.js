@@ -447,11 +447,11 @@ const Services = () => {
       </div>
       <div className="service-accordian">
         <ul className="tags one">
-          <a href="/ux-audit/" target="_blank">
+          <a href="/ux-audit/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">UX Audit</h3></li>
           </a>
           <li><h3 className="newh3-li">User Interviews</h3></li>
-          <a href="/blogs/why-usability-testing-is-crucial-for-product-success/" target="_blank">
+          <a href="/blogs/why-usability-testing-is-crucial-for-product-success/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">Usability Testing</h3></li>
           </a>
         </ul>
@@ -621,7 +621,7 @@ const Services = () => {
           </Accordion.Item>
         </Accordion> */}
         <ul className="tags one">
-          <a href="/blogs/product-design-101/" target="_blank">
+          <a href="/blogs/product-design-101/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">Product Roadmap</h3></li>
           </a>
           <li><h3 className="newh3-li">Product Concepts</h3></li>
@@ -1031,27 +1031,27 @@ const Services = () => {
       </div>
       <div className="service-accordian left_container">
         <ul className="tags one">
-          <a href="/blogs/e-commerce-strategies-to-convert-first-time-visitors-to-loyal-customers/" target="_blank">
+          <a href="/blogs/e-commerce-strategies-to-convert-first-time-visitors-to-loyal-customers/" target="_blank" rel="noreferrer">
             <li>
               <h3 className="newh3-li">E-commerce</h3>             
             </li>
           </a>
-          <a href="/blogs/web-design-and-development-approaches-that-can-help-you-grow-your-start-up/" target="_blank">
+          <a href="/blogs/web-design-and-development-approaches-that-can-help-you-grow-your-start-up/" target="_blank" rel="noreferrer">
             <li>
               <h3 className="newh3-li">Website design</h3>
             </li>
           </a>
           <li><h3 className="newh3-li">Responsive web design</h3></li>
-          <a href="/blogs/understanding-app-ux-design-a-beginners-guide/" target="_blank">
+          <a href="/blogs/understanding-app-ux-design-a-beginners-guide/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">Mobile app UX</h3></li>
           </a>
         </ul>
         <ul className="tags two">
-          <a href="/blogs/how-can-ux-designers-create-a-great-user-experience-for-wearable-technology/" target="_blank">
+          <a href="/blogs/how-can-ux-designers-create-a-great-user-experience-for-wearable-technology/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">Wearable app/interface design</h3></li>
           </a>
           <li><h3 className="newh3-li">Digital kiosks design</h3></li>
-          <a href="/blogs/dashboard-design/" target="_blank">
+          <a href="/blogs/dashboard-design/" target="_blank" rel="noreferrer">
             <li><h3 className="newh3-li">Dashboard design</h3></li>
           </a>
         </ul>

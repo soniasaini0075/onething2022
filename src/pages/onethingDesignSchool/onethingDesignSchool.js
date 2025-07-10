@@ -300,7 +300,7 @@ const OnethingDesignSchool = () => {
           <h2 class="section-heading newh2">Partnerships</h2>
         </div>
         <div class="partnerships-grid">
-          <a href="https://mastersunion.org/mastercamps/user-experience-design" target="_blank">
+          <a href="https://mastersunion.org/mastercamps/user-experience-design" target="_blank" rel="noreferrer">
             <div class="partner-info">
               <h5>Masters’ Union</h5>
               <p>MasterCamp in User Experience Design offers a holistic curriculm including capstone with real clients, design hackathons, UX teardowns and much more.</p>
@@ -309,7 +309,7 @@ const OnethingDesignSchool = () => {
              </figure>
             </div>
           </a>
-          <a href="https://learn.growthschool.io/user-experience-research" target="_blank">
+          <a href="https://learn.growthschool.io/user-experience-research" target="_blank" rel="noreferrer">
               <div class="partner-info">
               <h5>Growth school</h5>
               <p>UX Research & Strategy Program is focussed at helping design professionals turn user insights into effective design strategies.</p>

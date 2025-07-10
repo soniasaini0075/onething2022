@@ -228,7 +228,7 @@ const location = useLocation();
       <li>
       <a
       href="https://www.linkedin.com/company/onething-design/"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       className="linkedin svg-icon"
@@ -264,7 +264,7 @@ const location = useLocation();
       <li>
       <a
       href="https://www.instagram.com/onething.design/"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       width="48"
@@ -297,7 +297,7 @@ const location = useLocation();
       <li>
       <a
       href="https://open.spotify.com/show/1bFew0EsLhxbfPjswN8syn"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       className="spotify svg-icon"
@@ -331,7 +331,7 @@ const location = useLocation();
       <li>
       <a
       href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       width="48"
@@ -349,7 +349,7 @@ const location = useLocation();
       <li>
       <a
       href="https://dribbble.com/onething-design"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       className="dribble svg-icon"
@@ -426,12 +426,12 @@ const location = useLocation();
       </a>
       <div className="address-main">
       <div className="ad-loc">
-      <a href="https://goo.gl/maps/sz7FRsb9Eu9kj1ja8" target="_blank">
+      <a href="https://goo.gl/maps/sz7FRsb9Eu9kj1ja8" target="_blank" rel="noreferrer">
       <img loading="lazy" src={usaAddress} width={50} height={50} className="icon icon-submit" alt=""/>
       </a>
       <h5 className="caption var-bold">USA</h5>
       <address>
-      <a href="https://goo.gl/maps/sz7FRsb9Eu9kj1ja8" target="_blank">
+      <a href="https://goo.gl/maps/sz7FRsb9Eu9kj1ja8" target="_blank" rel="noreferrer">
       447 Sutter St Ste 405, PMB1100 San Francisco,
       <br />
       CA 94108 <br />

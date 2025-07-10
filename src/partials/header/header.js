@@ -267,7 +267,7 @@ className={`humberger_grad ${
           <li>
             <a
             href="https://www.linkedin.com/company/onething-design/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             >
             <svg
             className="linkedin svg-icon"
@@ -303,7 +303,7 @@ className={`humberger_grad ${
     <li>
       <a
       href="https://www.instagram.com/onething.design/"
-      target="_blank"
+      target="_blank" rel="noreferrer"
       >
       <svg
       width="48"
@@ -336,7 +336,7 @@ className={`humberger_grad ${
 <li>
   <a
   href="https://open.spotify.com/show/1bFew0EsLhxbfPjswN8syn"
-  target="_blank"
+  target="_blank" rel="noreferrer"
   >
   <svg
   className="spotify svg-icon"
@@ -370,7 +370,7 @@ className={`humberger_grad ${
 <li>
   <a
   href="https://www.youtube.com/channel/UC-W601M2PO8qJhwgnlm66Vg"
-  target="_blank"
+  target="_blank" rel="noreferrer"
   >
   <svg width="38" height="42" viewBox="0 0 46 33" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M45.6131 14.1886V18.9899C45.5828 19.3251 45.54 19.6603 45.523 19.9965C45.4071 22.303 45.252 24.6042 44.8071 26.8778C44.3069 29.434 42.8072 31.0523 40.2778 31.6559C39.3755 31.8707 38.4375 31.9893 37.5103 32.0366C33.9876 32.2158 30.464 32.4182 26.9386 32.4779C23.308 32.5394 19.6748 32.4565 16.0424 32.4128C12.7221 32.3727 9.40895 32.2265 6.11004 31.8012C3.40494 31.4517 1.4363 29.714 0.859434 27.0508C0.400262 24.9315 0.213027 22.7747 0.162206 20.6161C0.098011 17.878 0.056106 15.1337 0.17558 12.3992C0.267414 10.2781 0.519736 8.14983 0.884399 6.05637C1.34625 3.40209 3.01888 1.79097 5.67316 1.29168C6.83402 1.07324 8.01895 0.940389 9.19853 0.879761C12.2621 0.721948 15.3274 0.564136 18.3945 0.520447C21.9519 0.470518 25.5103 0.522231 29.0686 0.56681C32.5958 0.610499 36.1167 0.767419 39.6225 1.20698C42.1519 1.52438 44.2115 3.23714 44.7028 5.73896C45.063 7.57565 45.2163 9.45513 45.4241 11.3195C45.5302 12.2708 45.5534 13.2319 45.614 14.1886H45.6131ZM18.2054 23.2535C22.1811 20.9897 26.088 18.7643 30.0646 16.4996C26.0693 14.2252 22.1623 12.0006 18.2054 9.74846V23.2535Z" fill="black"/>
@@ -380,7 +380,7 @@ className={`humberger_grad ${
 <li>
   <a
   href="https://dribbble.com/onething-design"
-  target="_blank"
+  target="_blank" rel="noreferrer"
   >
   <svg
   className="dribble svg-icon"
