@@ -2,7 +2,7 @@ import "./bfsi.scss";
 
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-
+import React from 'react';
 import Newsletter from "../../partials/newsletter/newsletter";
 import whiteArrow from "../../assets/img/global/white-arrow.svg";
 import podcastBackgroundOne from "../../assets/img/podcast/large-podcast-bg1.webp";

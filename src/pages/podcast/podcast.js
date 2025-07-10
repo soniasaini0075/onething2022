@@ -1,7 +1,7 @@
 import "./podcast.scss";
 import { useState, useEffect, useRef } from "react";
 import { useParams, NavLink, useLocation } from "react-router-dom";
-
+import React from 'react';
 import { connect } from "react-redux";
 import { fetchPodcast } from "../../redux/actions";
 

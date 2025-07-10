@@ -1,7 +1,7 @@
 import "./case-study.scss";
 
 import { useState, useEffect } from "react";
-
+import React from 'react';
 import { useLocation, useParams } from "react-router-dom";
 
 import Slider from "react-slick";

@@ -3,7 +3,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Slider from "react-slick";
-
+import React from 'react';
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { connect } from "react-redux";

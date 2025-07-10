@@ -5,7 +5,7 @@ import { useState } from "react";
 import PageLoader from "../../partials/loaders/page-loader";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import React from 'react';
 const Success = () => {
   const { state } = useLocation();
 

@@ -1,5 +1,6 @@
 import "./blog-details.scss";
 
+import React from 'react';
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 

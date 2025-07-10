@@ -1,4 +1,5 @@
 import "./landing-page.scss";
+import React from 'react';
 import { useEffect,useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";

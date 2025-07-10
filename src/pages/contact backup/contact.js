@@ -1,5 +1,5 @@
 import "./contact.scss";
-
+import React from 'react';
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
 import { connect } from "react-redux";

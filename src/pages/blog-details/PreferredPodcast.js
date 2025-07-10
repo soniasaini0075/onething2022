@@ -3,6 +3,7 @@ import { fetchPodcastforBlog } from "../../redux/actions";
 import { useEffect, useState } from "react";
 import ctaArrow from "../../assets/img/global/grad-arrow.svg";
 import { useLocation } from "react-router-dom";
+import React from 'react';
 
 const PreferredPodcast = ({ id }) => {
   const [data, setData] = useState();

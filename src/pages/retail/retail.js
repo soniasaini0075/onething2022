@@ -2,7 +2,7 @@ import "./retail.scss";
 
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-
+import React from 'react';
 import caseStudyIcon from "../../assets/img/case-study.svg";
 import CuratedProjectsLarge from "../../partials/curated-large/CuratedProjectsLarge";
 import Newsletter from "../../partials/newsletter/newsletter";

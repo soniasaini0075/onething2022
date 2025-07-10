@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { addPageMetas } from "../../utils/global_fun";
 import { PAGE_METAS } from "../../data/data";
-
+import React from 'react';
 import "./terms-conditions.scss";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";

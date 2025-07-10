@@ -3,7 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import { connect } from "react-redux";
 import { fetchProjects } from "../../redux/actions";
-
 import "./projects.scss";
 import Testimonials from "../../partials/testimonials/testimonials";
 import PageLoader from "../../partials/loaders/page-loader";

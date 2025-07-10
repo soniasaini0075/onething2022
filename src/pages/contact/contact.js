@@ -2,7 +2,7 @@ import "./contact.scss";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import React from 'react';
 import Awards from "../../partials/awards/awards";
 import FormComp from "../../partials/form/form";
 

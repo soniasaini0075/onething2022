@@ -1,7 +1,7 @@
 import "./search.scss";
 import { useEffect } from "react";
 import { useParams, NavLink } from "react-router-dom";
-
+import React from 'react';
 import { useLocation } from "react-router-dom";
 import { fetchBlogs } from "../../redux/actions";
 import { useState } from "react";

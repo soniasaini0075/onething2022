@@ -1,6 +1,7 @@
 import "./home.scss";
 
 // React
+import React from 'react';
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Button from "react-bootstrap/Button";

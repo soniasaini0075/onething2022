@@ -1,5 +1,5 @@
 import "./careers.scss";
-
+import React from 'react';
 import { useEffect, useState,useRef } from "react";
 
 import { connect } from "react-redux";

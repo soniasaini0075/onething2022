@@ -1,6 +1,7 @@
 import "./about.scss";
 import "../../style.scss";
 
+import React from 'react';
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Controller, Scene } from "react-scrollmagic";

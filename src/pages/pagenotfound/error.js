@@ -1,7 +1,7 @@
 import "./error.scss";
 
 import { useEffect } from "react";
-
+import React from 'react';
 import error404 from "../../assets/img/global/404.svg";
 import primaryCtaArrow from "../../assets/img/global/primary-arrow.svg";
 // import { Helmet } from "react-helmet";
