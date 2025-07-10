@@ -15,6 +15,7 @@
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "caniuse-lite": "^1.0.30001727",
     "gsap": "^3.10.4",
     "locomotive-scroll": "^4.1.4",
     "mouse-follower": "^1.1.2",
@@ -74,6 +75,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.28.0",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
